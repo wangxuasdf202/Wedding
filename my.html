@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>FORYOU婚纱-我的管理页面</title>
+		<ink rel="stylesheet" type="text/css" href="css/animate.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont-z.css" />
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/my.css" />
+		<script src="js/jquery-1.12.4.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+		<script src="mock/mock.js" type="text/javascript" charset="utf-8"></script>
+		<script src="mock/address.js" type="text/javascript" charset="utf-8"></script>
+		<script src="mock/order.js" type="text/javascript" charset="utf-8"></script>
+		<script src="bootstrap/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div class="container mt10 my-main">
+			<div class="main-nav">
+				<ul>
+					<li class="myhs">我的婚纱</li>
+					<li class="my-gotoindex">
+						<a href="index.html">首页</a>
+					</li>
+					<li class="my-space">|</li>
+					<li class="my-gotoclassify">
+						<a href="category.html">分类</a>
+					</li>
+				</ul>
+			</div>
+			<div class="row jbjt">
+				<div class="col-md-3 col-xs-5">
+					<div class="listtabxx"></div>
+					<div class="listposition">
+						<ul class="mymenu mt10">
+						<li class="active">
+							<a href="javascript:;" id="1">账户设置</a>
+						</li>
+						<li>
+							<a href="javascript:;" id="2">地址管理</a>
+						</li>
+						<li>
+							<a href="javascript:;" id="3">订单管理</a>
+						</li>
+					</ul>
+					<!--<ul class="menu mt10">
+						<li>
+							<a href="#">分享账号</a>
+						</li>
+						<li>
+							<a href="#">退换售后</a>
+						</li>
+					</ul>
+					<ul class="menu mt10">
+						<li>
+							<a href="#">零钱包</a>
+						</li>
+						<li>
+							<a href="#">银行卡</a>
+						</li>
+						<li>
+							<a href="#">优惠价</a>
+						</li>
+					</ul>
+					<ul class="menu mt10">
+						<li>
+							<a href="#">购物车</a>
+						</li>
+						<li>
+							<a href="#">收藏</a>
+						</li>
+						<li>
+							<a href="#">活动中心</a>
+						</li>
+					</ul>-->
+					</div>
+				</div>
+				
+				
+				<div class="col-md-9 col-xs-9">
+					<div class="tab-content">
+						<div class="tab-pane active" id="userInfo">
+							<div class="head-user">
+								<h3>个人资料</h3>
+								<div class="userpic">
+									<img src="img/tx.jpg" />
+									<span>编辑头像</span>
+								</div>
+								<div class="userwelcome">
+									<span>FORYOU婚纱会员您好</span>
+									<!--<div class="progress">
+										<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+											<span class="sr-only">40% Complete (success)</span>
+										</div>
+									</div>-->
+								</div>
+							</div>
+							<form class="form-horizontal mt10 clearfix">
+								<div class="form-group">
+									<label for="inputNickname" class="col-sm-2 control-label">昵称：</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control" id="inputNickname" placeholder="请设置昵称">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="inputrealname" class="col-sm-2 control-label">真实姓名：</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control" id="inputrealname" placeholder="请输入真实姓名">
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-sm-2 control-label">性别：</label>
+									<div class="col-sm-10">
+										<label class="gender"><input type="radio" name="gender" class="male">&nbsp;男</label>
+										<label class="gender"><input type="radio" name="gender" class="female" checked="checked">&nbsp;女</label>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="inputbirthdate" class="col-sm-2 control-label">出生日期：</label>
+									<div class="col-sm-10">
+										<input type="date" class="form-control" id="inputbirthdate" placeholder="请输入出生日期">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="inputplace" class="col-sm-2 control-label">现居住地：</label>
+									<div class="col-sm-10">
+										<select id="inputplace" class="form-control">
+											<option value="1">请选择一个城市</option>
+											<option value="2">北京</option>
+											<option value="3">天津</option>
+											<option value="4">上海</option>
+											<option value="5">山东</option>
+											<option value="6">山西</option>
+											<option value="7">河南</option>
+											<option value="8">河北</option>
+											<option value="9">广州</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="inputemail" class="col-sm-2 control-label">电子邮箱：</label>
+									<div class="col-sm-10">
+										<input type="email" class="form-control" id="inputemail" placeholder="请输入邮箱" />
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="inputheight" class="col-sm-2 control-label">身高(cm)：</label>
+									<div class="col-sm-4">
+										<input type="text" class="form-control" id="inputheight" placeholder="" />
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="inputweight" class="col-sm-2 control-label">体重(kg)：</label>
+									<div class="col-sm-4">
+										<input type="text" class="form-control" id="inputweight" placeholder="" />
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-offset-2 col-sm-10">
+										<button type="submit" class="btn btn-default">保存</button>
+										<button type="reset" class="btn">重置</button>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="tab-pane" id="addrInfo">
+							<form class="form-horizontal mt10">
+								<div class="head">
+									<span class="h-text">已经保存的收货地址</span>
+								</div>
+								<table class="table table-hover table-addrInfo">
+									<thead>
+										<tr>
+											<th>收货人</th>
+											<th>地址信息</th>
+											<th>详细信息</th>
+											<th>邮政编码</th>
+											<th>电话/手机</th>
+											<th>操作</th>
+										</tr>
+									</thead>
+									<tbody>
+										<!--<tr>
+											<td>张三</td>
+											<td>天津</td>
+											<td>西青区</td>
+											<td>300350</td>
+											<td>13222456789</td>
+											<td>
+												<i class="iconfont icon-edit-fill"></i>
+												<i class="iconfont icon-delete"></i>
+											</td>
+										</tr>-->
+									</tbody>
+								</table>
+								<hr />
+								<div class="addNewAddress">
+									<div class="headTips">
+										<span class="ht-type">新增收货地址</span>
+									</div>
+									<div class="form-group mt10">
+										<label for="inputconsignee" class="col-sm-2 control-label"><strong>* </strong> 收货人</label>
+										<div class="col-sm-10">
+											<input type="text" class="form-control" id="inputconsignee" placeholder="长度不超过25个字符" maxlength="25">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="inputmobilephone" class="col-sm-2 control-label"><strong>* </strong> 手机号码</label>
+										<div class="col-sm-10">
+											<input type="tel" class="form-control" id="inputmobilephone" placeholder="请输入手机号码">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="inputaddress" class="col-sm-2 control-label">地址信息</label>
+										<div class="col-sm-10">
+											<select id="inputaddress" class="form-control">
+												<option value="0">北京</option>
+												<option value="1">天津</option>
+												<option value="2">上海</option>
+												<option value="3">山东</option>
+												<option value="4">山西</option>
+												<option value="5">河南</option>
+												<option value="6">河北</option>
+												<option value="7">广州</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="inputdetailaddress" class="col-sm-2 control-label"><strong>* </strong>详细地址</label>
+										<div class="col-sm-10">
+											<input type="text" class="form-control" id="inputdetailaddress" placeholder="街道、楼牌号等">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="inputemailcode" class="col-sm-2 control-label">邮政编码</label>
+										<div class="col-sm-10">
+											<input type="text" class="form-control" id="inputemailcode" placeholder="请填写邮编">
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="col-sm-offset-2 col-sm-10">
+											<button type="button" class="btn btn-default" onclick="addanddupdateAddr()">保存收货地址</button>
+											<button type="reset" class="btn">重置</button>
+										</div>
+									</div>
+								</div>
+
+							</form>
+						</div>
+						<div class="tab-pane mt10" id="orderInfo">
+							<div class="row clearfix">
+								<ul class="nav nav-tabs tabInfo">
+									<li class="active">
+										<a href="javascript:;">全部</a>
+									</li>
+									<li>
+										<a href="javascript:;">待付款</a>
+									</li>
+									<li>
+										<a href="javascript:;">待收货</a>
+									</li>
+									<li>
+										<a href="javascript:;">已完成</a>
+									</li>
+									<li>
+										<a href="javascript:;">已取消</a>
+									</li>
+								</ul>
+							</div>
+							<div class="row orderList clearfix"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--footer start-->
+		<div class="footer container">
+			<div class="footer-index-first">
+				<ul class="col-md-12 col-xs-12">
+					<li>
+						<a href="#">趋势解读</a>
+					</li>
+					<li>
+						<a href="#">流行分析</a>
+					</li>
+					<li>
+						<a href="#">款式</a>
+					</li>
+					<li>
+						<a href="#">图案</a>
+					</li>
+					<li>
+						<a href="#">面料</a>
+					</li>
+					<li>
+						<a href="#">T台</a>
+					</li>
+					<li>
+						<a href="#">读物</a>
+					</li>
+					<li>
+						<a href="#">素材</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer-index-second row">
+				<ul class="col-md-12 col-xs-12">
+					<li>
+						<a href="#">关于我们</a>
+					</li>
+					<span class="fenge">|</span>
+					<li>
+						<a href="#">加入会员</a>
+					</li>
+					<span class="fenge">|</span>
+					<li>
+						<a href="#">收费一览</a>
+					</li>
+					<span class="fenge">|</span>
+					<li>
+						<a href="#">付款方式</a>
+					</li>
+					<span class="fenge">|</span>
+					<li>
+						<a href="#">法律声明</a>
+					</li>
+					<span class="fenge">|</span>
+					<li>
+						<a href="#">联系我们</a>
+					</li>
+					<span class="fenge">|</span>
+					<li>
+						<a href="#">友情链接</a>
+					</li>
+					<span class="fenge">|</span>
+					<li>
+						<a href="#">诚聘英才</a>
+					</li>
+					<span class="fenge">|</span>
+					<li>
+						<a href="#">网站地图</a>
+					</li>
+					<span class="fenge">|</span>
+					<li>
+						<a href="#">广告中心</a>
+					</li>
+					<span class="fenge">|</span>
+					<li>
+						<a href="#">活动专题</a>
+					</li>
+					<span class="fenge">|</span>
+					<li>
+						<a href="#">博客</a>
+					</li>
+				</ul><br />
+			</div>
+			<p class="col-md-12 col-xs-12 shanghai">上海逸尚云联信息技术股份有限公司 © 2004-2020 法律顾问：北京中银（上海）律师事务所 沪ICP备06003020号-1</p>
+			<div class="safe col-md-12 col-xs-12">
+				<a href="#" class="safe-con">
+					<img src="img/index/safty.png" />
+					<span>沪公网安备 31010402000973号</span>
+				</a>
+			</div>
+		</div>
+		<!--底部end-->
+		<!-- 模态框 -->
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">修改收货地址</h4>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-sm-12 col-xs-12 mb-30">
+								<label for="inputconsignee2">收货人<span class="required">*</span></label>
+								<input id="inputconsignee2" type="text" placeholder="请填写收货人姓名" />
+							</div>
+							<div class="col-sm-12 col-xs-12 mb-30">
+								<label for="inputemailcode2">邮政编码<span class="required">*</span></label>
+								<input id="inputemailcode2" type="text" placeholder="请填写邮政编码" />
+							</div>
+							<div class="col-sm-12 col-xs-12 mb-30">
+								<label for="inputmobilephone2">手机号码<span class="required">*</span></label>
+								<input id="inputmobilephone2" type="text" placeholder="请填写收货人手机号" />
+							</div>
+							<div class="col-xs-12 mb-30">
+								<label for="inputaddress2">所在地区<span class="required">*</span></label>
+								<select id="inputaddress2">
+									<option value="1">请选择一个城市</option>
+									<option value="2">北京</option>
+									<option value="3">天津</option>
+									<option value="4">上海</option>
+									<option value="5">山东</option>
+									<option value="6">山西</option>
+									<option value="7">河南</option>
+									<option value="8">河北</option>
+									<option value="9">广州</option>
+								</select>
+							</div>
+							<div class="col-xs-12 mb-30">
+								<label>详细地址<span class="required">*</span></label>
+								<input id="inputdetailaddress2" type="text" placeholder="街道、楼牌号等" />
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+						<button type="button" class="btn btn-primary" onclick="addanddupdateAddr()">保存</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			   var userInfo = JSON.parse(window.localStorage.getItem("user")) || [];
+				console.log(userInfo);
+				// 判断用户没登录的情况
+				if(userInfo.length == 0) {
+					layer.alert('没登录请去登录', {
+						'skin': 'layui-layer-lan'
+					}, function() {
+						location.href = "login.html";
+					});
+				}
+			
+			var index = 0;
+			var number = 0;
+			var type = 0;
+			var ur = location.href;
+			if(ur) {
+				type = ur.split('?')[1].split("=")[1];
+			}
+			$('.mymenu li').eq(type - 1).addClass('active').siblings().removeClass('active');
+			$('.tab-pane').eq(type - 1).show().siblings().hide();
+
+			//点击切换
+			$('.mymenu li').click(function() {
+				$(this).addClass('active').siblings().removeClass('active');
+				var index2 = $(this).index();
+				$('.tab-pane').eq(index2).show().siblings().hide();
+			})
+			// 支付管理
+			orderContent();
+
+			function orderContent() {
+				var orderList = JSON.parse(window.localStorage.getItem("orderList")) || [];
+				
+				var str = '';
+				if(orderList.length != 0) {
+					if(index == 1) {
+						orderList = orderList.filter(function(item) {
+							if(item.status == 10) {
+								return item;
+							}
+						})
+					} else if(index == 2) {
+						orderList = orderList.filter(function(item) {
+							if(item.status == 20) {
+								return item;
+							}
+						})
+
+					} else if(index == 3) {
+						orderList = orderList.filter(function(item) {
+							if(item.status == 40) {
+								return item;
+							}
+						})
+
+					} else if(index == 4) {
+						orderList = orderList.filter(function(item) {
+							if(item.status == 50) {
+								return item;
+							}
+						})
+					}
+					for(var k in orderList) {
+						if(userInfo.user == orderList[k].user) {
+							str += `
+		                                        <div class="orderitem clearfix">
+		                                               <div class="row">
+		                                                   <div class="col-md-12 col-xs-12 ordernumber">
+		                                                   订单号:${orderList[k].subItemsList[0].orderId}
+		                                                </div>
+		                                                </div>
+		                                                <div class="row orderdetail">
+		                                                   <div class="col-md-4 col-xs-12 orderdetail-image">
+		                    `;
+							for(var i in orderList[k].subItemsList) {
+								var imgs = orderList[k].subItemsList[i].itemImage;
+
+								str += `<img src='img/category/${imgs}' width="80"> `;
+							}
+							str += `                        
+		                                                   </div>
+		                                                   <div class="col-md-2 col-xs-12">
+		                                                      <span class="confirmReceiptMargin">
+		                    `;
+							if(orderList[k].status == 10) {
+								str += '待付款';
+							} else if(orderList[k].status == 20) {
+								str +=`<img class="confirmReceipt" onclick="awaitToOk(${orderList[k].id})" src="img/queren.png"></img>`;
+							} else if(orderList[k].status == 40) {
+								str += '已完成';
+							} else if(orderList[k].status == 50) {
+								str += '已取消';
+							}
+
+							str += `
+		                                                       </span>
+		                                                   </div>
+		                                                   <div class="col-md-2 col-xs-12 orderdetail-total">
+		                                                       <span class="ordertotal">¥ ${orderList[k].amountY}</span>
+		                                                       <span>共${orderList[k].subItemsList.length}件</span>
+		                                                   </div>
+		                                                <div class="col-md-2 col-xs-12">
+		                                                   <span class="againpurchase">再次购买</span>
+		                                                </div>
+		                                                <div class="col-md-2 col-xs-12">
+		                                                    <span><i class="iconfont icon-delete" onclick="delOrder(${orderList[k].id})"></i>删除订单</span>
+		                                                </div>
+		                                          </div>
+		                                        </div>
+		                 `;
+						}
+					}
+					$('.orderList').html(str);
+				} else {
+					$('.orderList').html('亲你没订单的记录');
+				}
+				return false;
+			}
+			$('.tabInfo li').click(function() {
+				$(this).addClass('active').siblings().removeClass('active');
+				index = $(this).index();
+				orderContent();
+
+			})
+			
+			// 删除支付
+        function delOrder(id){
+           $.ajax({
+                 url:'order/delete',
+                 type:'delete',
+                 data:{
+                    id:id
+                 },
+                 dataType:'json',
+                 success:function(res){
+     
+                     layer.alert('删除成功',{'skin':'layui-layer-lan'},function(){
+                        location.reload();
+//                      location.href="my.html?type=3";
+                    });
+                 }
+            })
+           return false;
+       }
+
+       // 确认收货
+       function awaitToOk(id){
+       	            $.ajax({
+		             		url:'order/awaitToOk',
+		             		type:'post',
+		             		dataType:'json',
+		             		data:{
+		             			id:id
+		             		},
+		             		success:function(res2){
+		             			layer.alert('确认收货',{'skin':'layui-layer-lan'},function(){
+			                        location.reload();
+			                 
+			                    });
+		             		}
+		            })
+       }
+			
+			getAddr();
+			// 4.1 加载地址列表
+			function getAddr() {
+				var str2 = '';
+				$.ajax({
+					url: 'address/query',
+					type: 'post',
+					dataType: 'json',
+					success: function(res) {
+						var arr = res.data;
+						console.log(arr);
+						var countrys = ['北京', '天津', '上海', '山东', '山西', '河南', '河北', '广州'];
+						for(var k in arr) {
+							console.log(arr[k].userId,userInfo.user)
+						if(arr[k].userId ==userInfo.user ){
+							if(arr[k].isDefault == 1) {
+								str2 += `
+                                <tr class="isDefault">
+										<td>${arr[k].realname}</td>
+										<td>${countrys[arr[k].province]}</td>
+										<td>${arr[k].descAddress}</td>
+										<td>${arr[k].emailcode}</td>
+										<td>${arr[k].mobile}</td>
+										<td>
+											<i class="iconfont icon-edit-fill" onclick="getUpdataInfo(${arr[k].id})"></i>
+											<i class="iconfont icon-delete" onclick="delAddress(${arr[k].id})"></i>
+										</td>
+								</tr>
+                               `;
+							} else {
+								str2 += `
+                                <tr>
+										<td>${arr[k].realname}</td>
+										<td>${countrys[arr[k].province]}</td>
+										<td>${arr[k].descAddress}</td>
+										<td>${arr[k].emailcode}</td>
+										<td>${arr[k].mobile}</td>
+										<td>
+											<i class="iconfont icon-edit-fill" onclick="getUpdataInfo(${arr[k].id})"></i>
+											<i class="iconfont icon-delete" onclick="delAddress(${arr[k].id})"></i>
+										</td>
+								</tr>
+                               `;
+							}
+						   }
+						}
+						$('.table-addrInfo tbody').html(str2);
+						
+						// 设置默认地址：
+		             $('.table-addrInfo tbody tr').click(function(){
+		             	var index = $(this).index();
+		             	//console.log(index);
+		             	$(this).addClass('isDefault').siblings().removeClass('isDefault');
+		             	$.ajax({
+		             		url:'address/setDefault',
+		             		type:'post',
+		             		dataType:'json',
+		             		data:{
+		             			id:arr[index].id
+		             		},
+		             		success:function(res2){
+		             			console.log(res2);
+		             		}
+		             	})
+		             })
+					}
+				});
+			}
+			// 4.2 addanddupdateAddr()  添加或更新操作
+			function addanddupdateAddr(id = 0) {
+				var realname = $('#inputconsignee').val();
+				var phone = $('#inputmobilephone').val();
+				var country = $('#inputaddress').val();
+				var descAddress = $('#inputdetailaddress').val();
+				var emailcode = $("#inputemailcode").val();
+				var realname2 = $('#inputconsignee2').val();
+				var phone2 = $('#inputmobilephone2').val();
+				var country2 = $('#inputaddress2').val();
+				var descAddress2 = $('#inputdetailaddress2').val();
+				var emailcode2 = $("#inputemailcode2").val();
+				if(id == 0) {
+					//添加
+					$.ajax({
+						url: 'address/add',
+						type: 'post',
+						dataType: 'json',
+						data: {
+							realname: realname,
+							phone: phone,
+							emailcode: emailcode,
+							country: country,
+							descAddress: descAddress
+						},
+						success: function(res) {
+							// $('#myModal').modal('hide');
+							layer.alert('添加成功', {
+								'skin': 'layui-layer-lan'
+							}, function() {
+								location.reload();
+								location.href = "my.html?type=2";
+							});
+						}
+					})
+				} else {
+					//更新
+					$.ajax({
+						url: 'address/update',
+						type: 'post',
+						dataType: 'json',
+						data: {
+							id: id,
+							realname: realname2,
+							phone: phone2,
+							emailcode: emailcode2,
+							country: country2,
+							descAddress: descAddress2
+						},
+						success: function(res) {
+							$('#myModal').modal('hide');
+							layer.alert('更新成功', {
+								'skin': 'layui-layer-lan'
+							}, function() {
+								location.reload();
+								//location.href="my.html";
+							});
+						}
+					})
+				}
+			}
+			// 4.3 删除地址
+			function delAddress(id) {
+				$.ajax({
+					url: 'address/delete',
+					type: 'delete',
+					data: {
+						id: id
+					},
+					dataType: 'json',
+					success: function(res) {
+						// $('#myModal').modal('hide');
+						layer.alert('删除成功', {
+							'skin': 'layui-layer-lan'
+						}, function() {
+							location.reload();
+							location.href = "my.html?type=2";
+						});
+					}
+				})
+			}
+			// 4.2更新前先对其 获得更新的一条地址的信息
+			function getUpdataInfo(id) {
+				// 获得一条地址的信息
+				$.ajax({
+					url: 'address/queryOne',
+					type: 'post',
+					data: {
+						id: id
+					},
+					dataType: 'json',
+					success: function(res) {
+						$('#myModal').modal('show');
+						var oneInfo = res.data;
+						var str = '';
+						str += `<div class="row">
+                                        <div class="col-sm-12 col-xs-12 mb-30">
+                                            <label for="inputconsignee2">收货人<span class="required">*</span></label>                                       
+                                            <input id="inputconsignee2" type="text" placeholder="请填写收货人姓名" value="${oneInfo.realname}"/>
+                                        </div>
+                                        <div class="col-sm-12 col-xs-12 mb-30">
+                                            <label for="inputmobilephone2">手机号码<span class="required">*</span></label>                                       
+                                            <input id="inputmobilephone2" type="text"  value="${oneInfo.mobile}" placeholder="请填写收货人手机号" />
+                                        </div>
+                                        <div class="col-sm-12 col-xs-12 mb-30">
+											<label for="inputemailcode2">邮政编码<span class="required">*</span></label>
+											<input id="inputemailcode2" type="text" value="${oneInfo.emailcode}" placeholder="请填写邮政编码" />
+										</div>
+                                        <div class="col-xs-12 mb-30">
+                                            <label for="inputaddress2">所在地区<span class="required">*</span></label>
+                                            <select id="inputaddress2">
+                                    `;
+						var countrys = ['北京', '天津', '上海', '山东', '山西', '河南', '河北', '广州'];
+						str += `<option value="1">请选择一个城市</option>`;
+						for(var k in countrys) {
+							if(oneInfo.province == k) {
+								str += `<option value="${k}" selected="selected">${countrys[k]}</option>`;
+							} else {
+								str += `<option value="${k}">${countrys[k]}</option>`;
+							}
+
+						}
+						str += `   
+                                            </select>
+                                        </div>
+                                        <div class="col-xs-12 mb-30">
+                                            <label>详细地址<span class="required">*</span></label>
+                                            <input id="inputdetailaddress2" type="text" placeholder="街道、楼牌号等"  value="${oneInfo.descAddress}"/>
+                                        </div>                            
+                                    </div>
+                     </div>`;
+						$('.modal-body').html(str);
+						var str2 = `<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                        <button type="button" class="btn btn-primary" onclick="addanddupdateAddr(${id})">保存</button>`;
+						$('.modal-footer').html(str2);
+
+					}
+				})
+			}
+		</script>
+	</body>
+
+</html>

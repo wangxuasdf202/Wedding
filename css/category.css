@@ -1,0 +1,172 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	width: 100%;
+}
+ol,ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+.mt10 {
+	margin-top: 10px;
+}
+/*分类页主体部分*/
+main{
+	margin-top: 60px;
+}
+.cateName{
+   padding:0 0 0 20px;
+   height: 40px;
+   line-height: 40px;
+}
+.cateName li{
+	float:left;
+	padding:10px 8px 10px 0;
+	font:bold 14px 微软雅黑;
+}
+.cateName li:hover{
+	cursor: pointer;
+}
+.cateName li.active{
+	color: #867D7E;
+}
+.product-item {
+	border: 1px solid #ccc;
+	margin-bottom: 10px;
+}
+
+.product-item:hover {
+	border: 1px solid transparent;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.product-item .image {
+	position: relative;
+}
+
+.product-item .image .view {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+}
+
+.product-item .image span {
+	display: inline-block;
+	/*内联块*/
+	width: 48%;
+	text-align: center;
+	transform: scale(0);
+	/*缩放比例*/
+}
+
+.product-item:hover .image span {
+	transform: scale(1);
+	transition: all 0.3s;
+}
+
+.product-item .image span a {
+	color: #fff !important;
+}
+
+.product-item .image span a:hover {
+	text-decoration: none;
+}
+
+.product-item img {
+	width: 100%;
+}
+
+.product-item h4 {
+	font: 14px 微软雅黑;
+	padding: 10px 10px 0;
+}
+
+.product-item p {
+	font: 12px 微软雅黑;
+	padding: 10px 10px 0;
+	color: #f60;
+}
+/*底部start*/
+.footer ul {
+	list-style: none;
+}
+.footer{
+	font-size: 14px;
+}
+.footer a{
+	color: #000;
+}
+.footer{
+	margin-top: 50px;
+	border-top: 1px solid #ddd;
+	position: relative;
+	bottom: 0;
+}
+.footer .footer-index-first li,.footer-index-second li{
+	float: left;
+}
+.footer-index-first{
+	margin-top: 30px;
+}
+.footer-index-first li{
+    padding: 0 8px;
+}
+.footer span{
+	float: left;
+}
+.fenge{
+	padding:0 8px 0;
+}
+.safe img,p{
+	float: left;
+}
+.footer-index-first ul{
+	width: 450px;
+	height: 30px;
+	position: absolute;
+	left: 50%;
+	margin-left: -225px;
+}
+.footer-index-second ul{
+	top: 60px;
+	width: 960px;
+	height: 30px;
+	left: 50%;
+	margin-left: -480px;
+}
+.footer .shanghai{
+	position: absolute;
+	top: 120px;
+	width: 750px;
+	height: 30px;
+	left: 50%;
+	margin-left: -375px;
+}
+.footer .safe{
+	position: absolute;
+	top: 150px;
+	width: 235px;
+	height: 30px;
+	left: 50%;
+	margin-left: -117.5px;
+}
+.footer .safe-con{
+	position: relative;
+}
+.footer .safe img{
+	position: absolute;
+	margin-left: -25px;
+}
+.footer-index-first a:hover,.footer-index-second a:hover{
+	color: #cf5053!important;
+	text-decoration: underline!important;
+}
+/*底部end*/

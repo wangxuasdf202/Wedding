@@ -1,0 +1,267 @@
+
+.bg-container{
+	width:90%;
+	height: 490px;
+	margin: 50px auto 0px auto;
+	background: url(../img/备选12.jpg) no-repeat center;
+	background-size:cover;
+	
+}
+.zt{
+	width: 90%;
+	position:relative;
+	left: -50px;
+}
+/*-- Checkout Form --*/
+.checkout-form {
+	/*width: 1100px;*/
+	margin-top:20px;
+}
+.checkout-form h3 {
+  color: #A9B7B7;
+  border-bottom: 1px solid #ddd;
+  font-size: 24px;
+  line-height: 17px;
+  margin: 0 0 30px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  width: 100%;
+}
+.checkout-form .panel .panel-heading{
+	margin-left: 15px;
+	/*margin-top: 20px;
+	margin-bottom: -30px;*/
+}
+.checkout-form .panel .moren{
+	display: block;
+	height: 40px;
+	margin-left: 15px;
+}
+.mr{
+	font-family: "楷体";
+	font-size: 18px;
+	font-weight: 600;
+}
+.checkout-form h3 label {
+  font-size: 18px;
+  margin: 0;
+}
+/*-- Label --*/
+.checkout-form label {
+  display: block;
+  font-weight: 400;
+  line-height: 18px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.checkout-form label span {}
+.checkout-form label span.required {
+  color: #ff0000;
+}
+/*-- Input [ Text & Email & Password ] --*/
+.checkout-form input[type="text"], .checkout-form input[type="email"], .checkout-form input[type="password"] {
+  border: 1px solid #ddd;
+  display: block;
+  height: 40px;
+  padding: 7px 15px;
+  width: 100%;
+}
+/*-- Input [ Checkbox ] --*/
+.checkout-form input[type="checkbox"] {
+  float: left;
+  margin-right: 10px;
+  margin-top: 3px;
+}
+.checkout-form input[type="checkbox"] + label {
+  font-weight: 500;
+  margin-bottom: 0;
+}
+/*-- Select --*/
+.checkout-form select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background: rgba(0, 0, 0, 0) url("img/icon/select-arrow-down.png") no-repeat scroll right 5px center;
+  border: 1px solid #ddd;
+  height: 40px;
+  padding: 7px 15px;
+  text-transform: capitalize;
+  width: 100%;
+}
+.checkout-form select option {
+  padding: 5px 15px;
+}
+/*-- TextArea --*/
+.checkout-form textarea {
+  border: 1px solid #ddd;
+  color: #999;
+  height: 120px;
+  padding: 5px 15px;
+  resize: none;
+  width: 100%;
+}
+
+/*-- Order Wrapper --*/
+.order-wrapper {
+  /*border: 1px solid #ddd;*/
+  padding: 30px;
+}
+.order-wrapper h3 {
+  border-bottom: 1px solid #ddd;
+  font-size: 24px;
+  line-height: 17px;
+  margin: 0 0 30px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  width: 100%;
+  color: #A9B7B7;
+}
+/*-- Order Table --*/
+.order-table {
+  border: medium none;
+}
+.order-table table {}
+.order-table table thead {}
+.order-table table thead tr{
+  border-bottom: 1px solid #ddd;
+  border-right: medium none navy;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 0 0 10px;
+  text-transform: uppercase;
+  width: 100%;
+}
+.order-table table thead tr th{
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  border-right: medium none navy;
+  font-size: 13px;
+  line-height: 16px;
+  padding: 10px 10px 10px 10px;
+  text-transform: uppercase;
+  width: 250px;
+}
+.order-table table thead tr th.product-name {
+	 width: 20%;
+	border-left: 1px solid #ddd;
+  	text-align: left;
+  	
+}
+.tutututu img{
+	width: 100px !important;
+	height: 120px !important;
+}
+.order-table table thead tr th.product-introduce{
+  	text-align: left;
+}
+.order-table table thead tr th.product-price{
+	
+	text-align: right;
+}
+.order-table table thead tr th.product-quantity{
+	
+	text-align: right;
+}
+.order-table table thead tr th.product-total {
+	
+	border-right: 1px solid #ddd;
+  	text-align: right;
+}
+.order-table table tbody {}
+.order-table table tbody tr {}
+.order-table table tbody tr td {
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+  padding: 8px 10px;
+}
+.order-table table tbody tr td.product-name {
+  text-align: left;
+}
+.order-table table tbody tr td.product-introduce{
+	text-align: left;
+}
+.order-table table tbody tr td.product-introduce a{
+	color: #E2231A;
+	display:block;
+	width: 220px;
+	height: 40px;
+	overflow: hidden;
+}
+.order-table table tbody tr td.product-price {
+  text-align: right;
+}
+.order-table table tbody tr td.product-quantity{
+  text-align: right;
+}
+.order-table table tbody tr td.product-total {
+  text-align: right;
+}
+
+.order-table table tfoot {}
+.order-table table tfoot tr {}
+.order-table table tfoot tr th, .order-table table tfoot tr td {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+.order-table table tfoot tr th {
+	color: #E2231A;
+    text-align: right;
+}
+.order-table table tfoot tr td {
+	color: #E2231A;
+    text-align: right;
+}
+/*-- Order Button --*/
+ .order-button input[type="submit"]{
+  background-color: #282828;
+  border: medium none;
+  color: #fff;
+  font-weight: 500;
+  height: 40px;
+  padding: 5px 25px;
+  text-transform: uppercase;
+  float: right;
+}
+.order-button input[type="submit"]:hover {
+  color:#E2231A;;
+  background-color: #3f3f3f;
+}
+
+
+.address-method{
+   margin-top:30px;
+}
+
+.w{
+	margin-top: 15px;
+	margin-left: 10%;
+}
+.w h4{
+	color: #E2231A;
+	font-weight: 700;
+}
+.classify{
+	width: 1100px;
+	height: 350px;
+}
+
+.classify ul li{
+	width: 260px;
+	float: left;
+	height: 350px;
+}
+p{
+	width: 240px;
+	height: 36px;
+	line-height: 18px;
+	color: #333333;
+	font-size: 12px;
+	overflow: hidden;
+}
+h5{
+	color: #E2231A;
+	text-align: center;
+}
+.layui-layer-lan .layui-layer-title{
+ background: gray !important;
+}

@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车</title>
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/cart.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont-l.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate.css" />
+		
+	</head>
+
+	<body>
+        		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+      				</button>
+					<a class="navbar-brand" href="index.html"><img src="img/index/brand.png" width="150px" /></a>
+				</div>
+
+				<!-- 折叠部分 -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<a href="#">首页<span class="sr-only">(current)</span></a>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">产品<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="category.html">-森系热卖-</a>
+								</li>
+								<li>
+									<a href="category.html">-敬酒服-</a>
+								</li>
+								<li>
+									<a href="category.html">-秀禾服-</a>
+								</li>
+								<li role="separator" class="divider"></li>
+								<li>
+									<a href="category.html">-新品推荐-</a>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">面料<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">-全部-</a>
+								</li>
+								<li>
+									<a href="#">-面料趋势-</a>
+								</li>
+
+								<li>
+									<a href="#">-面料图库-</a>
+								</li>
+								<li>
+									<a href="#">-面料书籍-</a>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">明星<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">-明星大片-</a>
+								</li>
+								<li>
+									<a href="#">-明星红毯-</a>
+								</li>
+								<li role="separator" class="divider"></li>
+								<li>
+									<a href="#">-明星婚礼-</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">资讯</a>
+						</li>
+						<li>
+
+							<a href="order.html">我的订单</a>
+						</li>
+						<ul class="nav no-collapse navbtn">
+							<li>
+								<a href="#" data-toggle="dropdown">
+									<i class="iconfont icon-xiazai17"></i>
+								</a>
+								<div class="dropdown-menu search-form">
+									<form>
+										<div class="input-group">
+											<input type="text" class="form-control searchwedding" placeholder="最新时尚一网打尽...">
+											<span class="input-group-btn">
+        										<button class="btn btn-default search-btn" type="button">确定</button>
+      										</span>
+										</div>
+										<!-- /input-group -->
+									</form>
+								</div>
+							</li>
+							<li>
+								<a href="cart.html" class="iconfont icon-gouwuchekong"></a>
+							</li>
+						</ul>
+						<ul class="navbarright pull-right hidden-xs">
+							<!--<li>
+								<a href="login.html">登录</a>
+							</li>-->
+							<li class="mylogin pull-left"></li>
+							<li class="dropdown">
+								<a href="my.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">我的管理<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<!--传递页面到相应选项卡参考https://blog.csdn.net/qq_38822390/article/details/88037772-->
+									<li>
+										<a href="my.html?type=1">账户设置</a>
+									</li>
+									<li>
+										<a href="my.html?type=2">地址管理</a>
+									</li>
+									<li>
+										<a href="my.html?type=3">订单管理</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-fluid -->
+		</nav>
+
+		<div class="main">
+			<div class="container">
+				<div class="header-page">
+					<h1>购物车&nbsp;&nbsp;shopping&nbsp;cart</h1>
+				</div>
+				<!-- /.header-page -->
+				<div class="main-content">
+					<div class="table-responsive">
+						<table class="shop-table table" cellspacing="0">
+
+							<!--<tr>
+								<th class="product-select"><i class="iconfont icon-border"></i></th>
+								<th class="product-thumbnail">缩略图</th>
+								<th class="product-name">产品</th>
+								<th class="product-price">价钱</th>
+								<th class="product-quantity">数量</th>
+								<th class="product-subtotal">小计</th>
+								<th class="product-remove">操作</th>
+							</tr>-->
+
+							<!--<tr class="cart_item">
+								<td class="product-select">
+									<a href="#" class="remove"><i class="iconfont icon-border"></i></a>
+								</td>
+								<td class="product-thumbnail">
+									<a href="single-product.html">
+										<img class="img-responsive" src="img/category/j4.jpg" alt="IMG">
+									</a>
+								</td>
+								<td class="product-name">
+									<a href="single-product.html">
+										<font style="vertical-align: inherit;">
+											<font style="vertical-align: inherit;">
+												与羊毛包裹衣领的外套
+											</font>
+										</font>
+									</a>
+								</td>
+								<td class="product-price"><span class="amount"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">900USD</font></font></span></td>
+								<td class="product-quantity">
+									<div class="quantity">
+										<span class="minus-btn"><i class="iconfont icon-minus-circle"></i></span>
+										<input type="text" value="2">
+										<span class="plus-btn"><i class="iconfont icon-plus-circle"></i></span>
+									</div>
+								</td>
+								<td class="product-subtotal"><span class="amount"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1800USD</font></font></span></td>
+								<td class="product-remove">
+									<a><i class="iconfont icon-close-circle"></i></a>
+								</td>
+							</tr>
+							<tr class="cart_item">
+								<td class="product-select">
+									<a href="#" class="remove"><i class="iconfont icon-border"></i></a>
+								</td>
+								<td class="product-thumbnail">
+									<a href="single-product.html">
+										<img class="img-responsive" src="img/category/r3.jpg" alt="IMG">
+									</a>
+								</td>
+								<td class="product-name">
+									<a href="single-product.html">
+										<font style="vertical-align: inherit;">
+											<font style="vertical-align: inherit;">
+												与羊毛包裹衣领的外套
+											</font>
+										</font>
+									</a>
+								</td>
+								<td class="product-price"><span class="amount"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">700USD</font></font></span></td>
+								<td class="product-quantity">
+									<div class="quantity">
+										<span class="minus-btn"><i class="iconfont icon-minus-circle"></i></span>
+										<input type="text" value="2">
+										<span class="plus-btn"><i class="iconfont icon-plus-circle"></i></span>
+									</div>
+								</td>
+								<td class="product-subtotal"><span class="amount"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">700USD</font></font></span></td>
+								<td class="product-remove">
+									<a><i class="iconfont icon-close-circle"></i></a>
+								</td>
+							</tr>-->
+							<!--<tr class="cart-action">
+								<td colspan="4"></td>
+								<td class="mt10">
+									合计：<span class="totalprice">4000.00</span>
+								</td>
+
+								<td colspan="2">
+									<button class="update-cart-btn"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">更新购物车</font></font></button>
+									<button class=" btn btn-primary checkout-btn" onclick="orderConfirm()">进行结算 (<span class="totalcount">4</span>)</button>
+								</td>
+							</tr>-->
+
+						</table>
+						<!-- /.shop-table -->
+					</div>
+				</div>
+				<!-- /.main-content -->
+			</div>
+			<div class="cart-action">
+
+				<div>
+					<button class="update-cart-btn">更新购物车</button>
+					<button class=" btn btn-primary checkout-btn" onclick="orderConfirm()">进行结算 (<span class="totalcount">4</span>)</button>
+				</div>
+				<div>
+					合计：<span class="totalprice">4000.00</span>
+				</div>
+			</div>
+			<!--<div class="row">
+    		<div class="col-md-2 col-md-offset-10 col-xs-4 col-xs-offset-8">
+    			<div>合计：<span class="totalprice">4000.00</span></div>
+    			<div class="mt10">
+    				<button class="btn btn-primary" onclick="orderConfirm()">结算(<span class="totalcount">4</span>)</button>
+    			</div>
+    		</div>-->
+    	</div>
+		</div>
+		<div class="modal">
+			<div class="close">X</div>
+			<div class="title">你确定要删除吗?</div>
+			<div class="mybtn-info">
+				<button class="mybtn btn-ok">确定</button>
+				<button class="mybtn btn-cancel">取消</button>
+			</div>
+		</div>
+		<div class="mask"></div>
+		<div class="footer container ft">
+		<div class="footer-index-first">
+			<ul class="col-md-12 col-xs-12">
+				<li><a href="#">趋势解读</a></li>
+				<li><a href="#">流行分析</a></li>
+				<li><a href="#">款式</a></li>
+				<li><a href="#">图案</a></li>
+				<li><a href="#">面料</a></li>
+				<li><a href="#">T台</a></li>
+				<li><a href="#">读物</a></li>
+				<li><a href="#">素材</a></li>
+			</ul>
+		</div>
+		<div class="footer-index-second row">
+			<ul class="col-md-12 col-xs-12">
+			<li><a href="#">关于我们</a></li>
+			<span class="fenge">|</span>
+			<li><a href="#">会员须知</a></li>
+			<span class="fenge">|</span>
+			<li><a href="#">收费一览</a></li>
+			<span class="fenge">|</span>
+			<li><a href="#">付款方式</a></li>
+			<span class="fenge">|</span>
+			<li><a href="#">法律声明</a></li>
+			<span class="fenge">|</span>
+			<li><a href="#">联系我们</a></li>
+			<span class="fenge">|</span>
+			<li><a href="#">友情链接</a></li>
+			<span class="fenge">|</span>
+			<li><a href="#">诚聘英才</a></li>
+			<span class="fenge">|</span>
+			<li><a href="#">网站地图</a></li>
+			<span class="fenge">|</span>
+			<li><a href="#">广告中心</a></li>
+			<span class="fenge">|</span>
+			<li><a href="#">活动专题</a></li>
+			<span class="fenge">|</span>
+			<li><a href="#">博客</a></li>
+		</ul><br />
+		</div>
+		<p class="col-md-12 col-xs-12 shanghai">上海逸尚云联信息技术股份有限公司 © 2004-2020 法律顾问：北京中银（上海）律师事务所 沪ICP备06003020号-1</p>
+		<div class="safe col-md-12 col-xs-12">
+			<a href="#" class="safe-con">
+				<img src="img/index/safty.png"/>
+				<span>沪公网安备 31010402000973号</span>
+			</a>
+		</div>
+	</div>
+
+		<script src="js/jquery-1.12.4.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<script src="js/detail.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/layer/layer.js"></script>
+		<script>var chooseAll = false;
+var finalGoodList = [];
+var addGoodList = JSON.parse(localStorage.getItem('addGoodList')) || [];
+var preOrderGoodList = []; // 要生存订单的商品
+// 初始化调用购物车ajax 数据
+cartInfoajax();
+
+function cartInfoajax() {
+	finalGoodList = [];
+	//console.log(addGoodList);
+	$.ajax({
+		url: 'mock/productList.json',
+		type: 'get',
+		dataType: 'json',
+		success: function(res) {
+
+			var arr = res.data;
+			//3.通过两层循环 找相同 id的商品 组成一个新数组
+			for(var i = 0; i < arr.length; i++) {
+				for(var j = 0; j < addGoodList.length; j++) {
+					if(arr[i].id == addGoodList[j].itemId) {
+						var finalGoodListOne = {
+							item: arr[i],
+							count: addGoodList[j].count,
+							isSelect: 0
+						}
+						finalGoodList.push(finalGoodListOne);
+					}
+				}
+			}
+			//console.log(finalGoodList);
+			//4. 将组成新数组循环遍历出来
+			var str = `<tr>
+                            <th class="product-select"><i class="iconfont icon-border chooseAll" onclick="getChooseAll()"></i></th>
+                            <th class="product-thumbnail">缩略图</th>
+                            <th class="product-name">产品名称</th>
+                            <th class="product-price">价钱</th>
+                            <th class="product-quantity">数量</th>
+                            <th class="product-subtotal">小计</th>
+                            <th class="product-remove">操作</th>
+                        </tr>`;
+			for(var k in finalGoodList) {
+				str += `
+                        <tr class="cart_item">
+                                        <td class="product-select"><a href="javascript:;" class="remove"><i class="iconfont icon-border myicon"  onclick="touchOne(${k})"></i></a></td>
+                                        <td class="product-thumbnail">
+                                            <a href="single-product.html">
+                                                <img class="img-responsive" src="img/category/${finalGoodList[k].item.cover}" alt="IMG">
+                                            </a>
+                                        </td>
+                                        <td class="product-name">
+                                            <a href="single-product.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                               ${finalGoodList[k].item.title}
+                                            </font></font></a>
+                                        </td>
+                                        <td class="product-price"><span class="amount"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">￥ ${finalGoodList[k].item.price}</font></font></span></td>
+                                        <td class="product-quantity">
+                                            <div class="quantity">
+                                                <span class="minus-btn2 calc2" onclick="calcdec(${k})"><i class="iconfont icon-minus-circle"></i></span>
+                                                <input type="text" class="countInput2" value="${finalGoodList[k].count}">
+                                                <span class="plus-btn2 calc2" onclick="calcinc(${k})"><i class="iconfont icon-plus-circle"></i></span>
+                                            </div>
+                                        </td>
+                                        <td class="product-subtotal itemPrice"><span class="qfh">￥</span>
+                                                <span class="amount"> 1800USD </span></td>
+                                        <td class="product-remove"><a><i onclick="cartDel(${k})" class="iconfont myDel icon-close-circle"></i></a></td>
+                                    </tr>
+					`;
+			}
+			$('.table').html(str);
+			// 初始合计函数调用
+			total();
+		}
+	})
+}
+// 实现单选
+function touchOne(k) {
+	var isFull = true;
+	//console.log(k);
+	// 1. 让 isSelect 布尔取反
+	var isSelect = finalGoodList[k].isSelect;
+	isSelect = !isSelect;
+	console.log(isSelect);
+	// 2. 重新构建并替换 修改 isSelect 状态的数据,
+	var finalGoodListone = {
+		item: finalGoodList[k].item,
+		count: finalGoodList[k].count,
+		isSelect: isSelect
+	}
+	finalGoodList.splice(k, 1, finalGoodListone);
+	//console.log(finalGoodList);
+	// 3. 更改 勾选图片
+	if(isSelect) {
+		$('.myicon').eq(k).addClass('icon-check-square').removeClass('icon-border');
+	} else {
+		$('.myicon').eq(k).addClass('icon-border').removeClass('icon-check-square');
+	}
+	//console.log(finalGoodList);
+	// 4. 判断单选的每个商品的个数是否是购物车的总个数
+	for(var i = 0; i < finalGoodList.length; i++) {
+		if(finalGoodList[i].isSelect == false) {
+			// 有一个 isSelect 是false 就不是全选
+			isFull = false;
+		}
+	}
+	// isSelect 都是true  就是全选
+	chooseAll = isFull;
+	chooseAllImg();
+
+	// 合计
+	total();
+}
+
+function getChooseAll() {
+	// 1. chooseAll 取反, 判断chooseAll 如果是true 将 isSelect=true,否则isSelect=false
+	chooseAll = !chooseAll;
+	console.log(chooseAll);
+	var isSelect = false;
+	if(chooseAll) {
+		isSelect = true;
+	} else {
+		isSelect = false;
+	}
+	console.log('单选' + isSelect);
+	// 2. 重新构建 finalGoodList 每个(循环)商品 isSelect 与 chooseAll 一致
+	for(var i = 0; i < finalGoodList.length; i++) {
+		var finalGoodOne = {
+			item: finalGoodList[i].item,
+			count: finalGoodList[i].count,
+			isSelect: isSelect
+		}
+		finalGoodList.splice(i, 1, finalGoodOne);
+
+		// 3.1. 更改 单选勾选图片
+		if(isSelect) {
+			$('.myicon').eq(i).addClass('icon-check-square').removeClass('icon-border');
+		} else {
+			$('.myicon').eq(i).addClass('icon-border').removeClass('icon-check-square');
+		}
+
+	}
+	console.log(finalGoodList);
+	chooseAllImg();
+	//合计
+	total();
+}
+
+function chooseAllImg() {
+	// 3.2 全选判断使用图像
+	if(chooseAll) {
+		$('.chooseAll').addClass('icon-check-square').removeClass('icon-border');
+	} else {
+		$('.chooseAll').addClass('icon-border').removeClass('icon-check-square');
+	}
+}
+
+// 合计: 初始调，单选,全选 重新结算
+function total() {
+	var total = 0;
+	var totalcount = 0;
+	preOrderGoodList = [];
+	// 1. 循环 finalGoodList 商品， 判断 isSelect 是true的参用结算
+	console.log(finalGoodList);
+	for(var i = 0; i < finalGoodList.length; i++) {
+		// 2. 一个商品的个数,一个商品的单价
+		var count = finalGoodList[i].count;
+		var onePrice = finalGoodList[i].item.price;
+		// 3. 一个商品小计
+		var itemPrice = onePrice * count;
+		var sp = `<span>￥</span>`;
+		// 5.2 将 一个商品小计添加到 Dom上
+		$('.itemPrice').eq(i).html('￥'+itemPrice);
+		if(finalGoodList[i].isSelect == true) {
+			// 4. 累计求 总和和总商品个数
+			total += itemPrice;
+			totalcount += parseInt(count);
+
+			console.log(finalGoodList);
+			// 将勾选的商品放入 preOrderGoodList 要产生订单的商品中
+			var preOrderOne = {
+				item: finalGoodList[i].item,
+				count: finalGoodList[i].count
+			}
+			preOrderGoodList.push(preOrderOne);
+		}
+	}
+	// 5.1 将 总和，总商品个数 添加到 Dom上
+//						$('itemPrice').html(sp);
+	//					$('.totalprice').html(sp);
+	$('.totalprice').html('￥'+total);
+	$('.totalcount').html(totalcount);
+}
+
+//  减1操作 函数
+function calcdec(k) {
+
+	//1.获得旧商品的值 finalGoodList
+	for(var i = 0; i <= finalGoodList.length; i++) {
+		if(i == k) {
+			var count = finalGoodList[i].count;
+			count--;
+			if(count <= 1) {
+				count = 1;
+			}
+			var finalGoodOne = {
+				item: finalGoodList[i].item,
+				count: count,
+				isSelect: finalGoodList[i].isSelect
+			}
+			// 2. 将 finalGoodList 重构 修改 count数
+			finalGoodList.splice(i, 1, finalGoodOne);
+			// 3. 将 addGoodList 本地存储中 重构 修改 count数
+			var addGoodOne = {
+				itemId: finalGoodList[i].item.id,
+				count: count
+			}
+			addGoodList.splice(i, 1, addGoodOne);
+			localStorage.setItem('addGoodList', JSON.stringify(addGoodList));
+
+		}
+	}
+	// 找 countInput2 dom 更数值
+	$('.countInput2').eq(k).val(count);
+	// 结算
+	total();
+}
+
+//  减1操作 函数
+function calcinc(k) {
+
+	//1.获得旧商品的值 finalGoodList
+	for(var i = 0; i <= finalGoodList.length; i++) {
+		if(i == k) {
+			var count = finalGoodList[i].count;
+			count++;
+			var finalGoodOne = {
+				item: finalGoodList[i].item,
+				count: count,
+				isSelect: finalGoodList[i].isSelect
+			}
+			// 2. 将 finalGoodList 重构 修改 count数
+			finalGoodList.splice(i, 1, finalGoodOne);
+			// 3. 将 addGoodList 本地存储中 重构 修改 count数
+			var addGoodOne = {
+				itemId: finalGoodList[i].item.id,
+				count: count
+			}
+			addGoodList.splice(i, 1, addGoodOne);
+			localStorage.setItem('addGoodList', JSON.stringify(addGoodList));
+
+		}
+	}
+	// 找 countInput2 dom 更数值
+	$('.countInput2').eq(k).val(count);
+	// 结算
+	total();
+}
+
+function cartDel(k) {
+	/* cart 删除商品*/
+	console.log(k);
+	var item;
+	item = $('.myDel').eq(k).parent().parent();
+	$('.mask').show();
+	$('.modal').fadeIn();
+
+	$('.close,.btn-cancel').click(function() {
+		$('.mask').hide();
+		$('.modal').fadeOut();
+	})
+	$('.btn-ok').click(function() {
+		item.remove();
+		$('.mask').hide();
+		$('.modal').fadeOut();
+	})
+	// 通过商品id 删除本地存储的数据
+	var id = finalGoodList[k].item.id;
+	for(var i = 0; i < addGoodList.length; i++) {
+		console.log(addGoodList[i].itemId, id);
+		if(addGoodList[i].itemId == id) {
+			addGoodList.splice(i, 1);
+		}
+	}
+
+	// 删除本地存储中对应的商品
+	window.localStorage.setItem('addGoodList', JSON.stringify(addGoodList));
+	// 调用ajax
+	cartInfoajax();
+
+}
+// 结算跳转到确认订单页
+function orderConfirm() {
+	// 1. 判断总价格不能小等于 0
+	// 2. 判断是否有用户登录，没登录去登录
+	var totalprice = parseFloat($('.totalprice').html());
+	//console.log(typeof totalprice);
+	if(totalprice <= 0) {
+		layer.alert('至少选一个商品去结算');
+	} else if(!localStorage.getItem('user')) {
+		layer.alert('没登录请去登录', {
+			skin: 'layui-layer-lan'
+		}, function() {
+			location.href = "login.html";
+		})
+	} else {
+		// 将你要生存订单的商品存到本地存储preOrderGoodList,然后跳转到确认订单页
+		localStorage.setItem('preOrderGoodList', JSON.stringify(preOrderGoodList));
+		location.href = "order.html";
+	}
+}</script>
+	</body>
+
+</html>

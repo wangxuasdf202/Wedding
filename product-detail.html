@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>产品详情页</title>
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont-l.css" />
+		<link rel="stylesheet" type="text/css" href="css/detail.css" />
+		<link rel="stylesheet" type="text/css" href="css/slick.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont-zx.css"/>
+		
+	</head>
+
+	<body>
+		<!--<div class="container">
+			<img class="img" src="img/banner3.jpg"/>
+		</div>-->
+		
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+      				</button>
+					<a class="navbar-brand" href="index.html"><img src="img/index/brand.png" width="150px" /></a>
+				</div>
+
+				<!-- 折叠部分 -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<a href="#">首页<span class="sr-only">(current)</span></a>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">产品<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="category.html">-森系热卖-</a>
+								</li>
+								<li>
+									<a href="category.html">-敬酒服-</a>
+								</li>
+								<li>
+									<a href="category.html">-秀禾服-</a>
+								</li>
+								<li role="separator" class="divider"></li>
+								<li>
+									<a href="category.html">-新品推荐-</a>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">面料<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">-全部-</a>
+								</li>
+								<li>
+									<a href="#">-面料趋势-</a>
+								</li>
+
+								<li>
+									<a href="#">-面料图库-</a>
+								</li>
+								<li>
+									<a href="#">-面料书籍-</a>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">明星<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">-明星大片-</a>
+								</li>
+								<li>
+									<a href="#">-明星红毯-</a>
+								</li>
+								<li role="separator" class="divider"></li>
+								<li>
+									<a href="#">-明星婚礼-</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">资讯</a>
+						</li>
+						<li>
+
+							<a href="order.html">我的订单</a>
+						</li>
+						<ul class="nav no-collapse navbtn">
+							<li>
+								<a href="#" data-toggle="dropdown">
+									<i class="iconfont icon-xiazai17"></i>
+								</a>
+								<div class="dropdown-menu search-form">
+									<form>
+										<div class="input-group">
+											<input type="text" class="form-control searchwedding" placeholder="最新时尚一网打尽...">
+											<span class="input-group-btn">
+        										<button class="btn btn-default search-btn" type="button">确定</button>
+      										</span>
+										</div>
+										<!-- /input-group -->
+									</form>
+								</div>
+							</li>
+							<li>
+								<a href="cart.html" class="iconfont icon-gouwuchekong"></a>
+							</li>
+						</ul>
+						<ul class="navbarright pull-right hidden-xs">
+							<!--<li>
+								<a href="login.html">登录</a>
+							</li>-->
+							<li class="mylogin pull-left"></li>
+							<li class="dropdown">
+								<a href="my.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">我的管理<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<!--传递页面到相应选项卡参考https://blog.csdn.net/qq_38822390/article/details/88037772-->
+									<li>
+										<a href="my.html?type=1">账户设置</a>
+									</li>
+									<li>
+										<a href="my.html?type=2">地址管理</a>
+									</li>
+									<li>
+										<a href="my.html?type=3">订单管理</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-fluid -->
+		</nav>
+
+		<div class="main">
+			<div class="container clearfix">
+				<div class="row">
+					<div class="col-md-1 col-xs-1"></div>
+					<div class="col-md-5 col-xs-13 myslide">
+						<!--<div class="tabs">
+						<div class="tab-content">
+							<div class="tab-content-img tab-pane active" id="product1">
+								<img src="img/category/j1.jpg" />
+							</div>
+							<div class="tab-content-img tab-pane" id="product2">
+								<img src="img/category/j2.jpg" />
+							</div>
+							<div class="tab-content-img tab-pane" id="product3">
+								<img src="img/category/j3.jpg" />
+							</div>
+							<div class="tab-content-img tab-pane" id="product4">
+								<img src="img/category/j4.jpg" />
+							</div>
+							<div class="tab-content-img tab-pane" id="product4">
+								<img src="img/category/j4.jpg" />
+							</div>
+						</div>
+						<ul class="tab-title">
+							<li class="active">
+								<a href=" " data-toggle="tab"><img src="img/category/j1.jpg" /></a>
+							</li>
+							<li>
+								<a href="#product2" data-toggle="tab"><img src="img/category/j2.jpg" /></a>
+							</li>
+							<li>
+								<a href="#product3" data-toggle="tab"><img src="img/category/j3.jpg" /></a>
+							</li>
+							<li>
+								<a href="#product4" data-toggle="tab"><img src="img/category/j4.jpg" /></a>
+							</li>
+							<li class="active">
+								<a href="#product1" data-toggle="tab"><img src="img/category/j5.jpg" /></a>
+							</li>
+						</ul>
+					</div>-->
+					</div>
+					<div class="col-md-5 detail-r">
+						<nav class="breadcrumb">
+							<a href="index.html">
+								主页
+							</a> <i class="iconfont icon-right"></i>
+							<a href="shop-fullwidth.html">
+								商品展示页
+							</a> <i class="iconfont icon-right"></i>
+							<span>
+								商品详情
+							</span>
+						</nav>
+						<div class="summary">
+							<!--<h3 class="product-name">蓝色条纹夏季至尊上衣</h3>
+							<div class="price">
+										$ 290.50
+							</div>
+							<div class="short-desc">
+								<h5>产品介绍</h5>
+								<font style="vertical-align: inherit;">
+									橱窗前，婚纱膨胀着莹洁而纯净的光，这些附着在新娘身上的物什，仿佛生来就沾染了贵族气息，隐隐含着不可一世的傲慢与神圣。
+								</font>
+							</div>
+							<div class="pro-size">
+								<h5>产品尺寸</h5>
+								<button>S</button>
+								<button class="active">M</button>
+								<button>L</button>
+								<button>XL</button>
+							</div>-->
+
+						</div>
+						<hr />
+						<div class="product-action">
+							<div class="clearfix">
+								<div class="quantity">
+									<span class="minus-btn calc"><i class="iconfont icon-minus-circle"></i></span>
+									<input type="text" class="countInput" value="1">
+									<span class="plus-btn calc"><i class="iconfont icon-plus-circle"></i></span>
+								</div>
+								<button type="submit" onclick="addCart()" class="add-to-cart-btn"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">添加到购物车</font></font></button>
+							</div>
+						</div>
+
+						<div class="share-this">
+							<h4><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">分享到：</font></font></h4>
+							<ul class="list-social-2">
+								<li>
+									<a href="#" class="facebook"><i class="iconfont icon-wechat-fill"></i></a>
+								</li>
+								<li>
+									<a href="#" class="twitter"><i class="iconfont icon-chrome-fill"></i></a>
+								</li>
+								<li>
+									<a href="#" class="instagram"><i class="iconfont icon-weibo"></i></a>
+								</li>
+								<li>
+									<a href="#" class="vk"><i class="iconfont icon-twitter"></i></a>
+								</li>
+							</ul>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="container mt10">
+			<div class="row productDes">
+				<div class="col-md-1 col-xs-1"></div>
+				<div class="col-md-10 col-xs-10">
+					<ul class="nav nav-tabs" role="tablist">
+						<li class="active">
+							<a href="#xiaom" data-toggle="tab">商品介绍</a>
+						</li>
+						<li>
+							<a href="#hua" data-toggle="tab">参数</a>
+						</li>
+						<li>
+							<a href="#nuo" data-toggle="tab">评论</a>
+						</li>
+					</ul>
+
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<div class="tab-pane active xiangqing" id="xiaom">
+							<img src="img/xiangqing2.jpg"/>
+							
+						</div>
+						<div class="tab-pane cs" id="hua">
+							<ul>
+								<li>品牌: &nbsp;&nbsp;&nbsp;BORUIDIA/波瑞蒂亚 </li>
+								<li>面料: &nbsp;&nbsp;&nbsp;蕾丝</li>
+								<li>腰型: &nbsp;&nbsp;&nbsp;高腰</li>
+								<li>摆型: &nbsp;&nbsp;&nbsp;小拖尾</li>
+								<li>袖长: &nbsp;&nbsp;&nbsp;有袖披肩</li>
+								<li>服饰工艺: &nbsp;&nbsp;&nbsp;立体裁剪</li>
+							</ul>
+							<ul>
+								<li>适用年龄: &nbsp;&nbsp;&nbsp;18-25周岁</li>
+								<li>风格: &nbsp;&nbsp;&nbsp;宫廷</li>
+								<li>流行元素: &nbsp;&nbsp;&nbsp;绑带</li>
+								<li>货号: &nbsp;&nbsp;&nbsp;HS20190601-4</li>
+								<li>适用场景: &nbsp;&nbsp;&nbsp;酒店室内</li>
+								<li>适用对象: &nbsp;&nbsp;&nbsp;大码</li>
+							</ul>
+							<ul>
+								<li>尺码: &nbsp;&nbsp;&nbsp;特殊定制要求请联系客服 XS S M L</li>
+								<li>领型: &nbsp;&nbsp;&nbsp;深V领</li>
+								<li>颜色: &nbsp;&nbsp;&nbsp;鱼尾款婚纱【不含拖尾不含头纱】</li>
+								<li>上市年份/季节: &nbsp;&nbsp;&nbsp;2019年夏季</li>
+								<li>服装款式细节: &nbsp;&nbsp;&nbsp;亮片</li>
+								<li>销售渠道类型: &nbsp;&nbsp;&nbsp;纯电商(只在线上销售)</li>
+							</ul>
+						</div>
+						<div class="tab-pane pinglun" id="nuo">
+							<h4>评价词：</h4>
+							<ul>
+								<li>穿着效果好(20)</li>
+								<li>外形好看(18)</li>
+								<li>码数很准(11)</li>
+								<li>质量蛮好(9)</li>
+								<li>做工很赞(8)</li>
+								<li>服务态度好(4)</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-1 col-xs-1"></div>
+			</div>
+		</div>
+
+		<!--footer start-->
+		
+			<div class="footer container ft">
+		<div class="footer-index-first">
+			<ul class="col-md-12 col-xs-12">
+				<li><a href="#">趋势解读</a></li>
+				<li><a href="#">流行分析</a></li>
+				<li><a href="#">款式</a></li>
+				<li><a href="#">图案</a></li>
+				<li><a href="#">面料</a></li>
+				<li><a href="#">T台</a></li>
+				<li><a href="#">读物</a></li>
+				<li><a href="#">素材</a></li>
+			</ul>
+		</div>
+		<div class="footer-index-second row">
+			<ul class="col-md-12 col-xs-12">
+			<li><a href="#">关于我们</a></li>
+			<span class="fenge">|</span>
+			<li><a href="#">会员须知</a></li>
+			<span class="fenge">|</span>
+			<li><a href="#">收费一览</a></li>
+			<span class="fenge">|</span>
+			<li><a href="#">付款方式</a></li>
+			<span class="fenge">|</span>
+			<li><a href="#">法律声明</a></li>
+			<span class="fenge">|</span>
+			<li><a href="#">联系我们</a></li>
+			<span class="fenge">|</span>
+			<li><a href="#">友情链接</a></li>
+			<span class="fenge">|</span>
+			<li><a href="#">诚聘英才</a></li>
+			<span class="fenge">|</span>
+			<li><a href="#">网站地图</a></li>
+			<span class="fenge">|</span>
+			<li><a href="#">广告中心</a></li>
+			<span class="fenge">|</span>
+			<li><a href="#">活动专题</a></li>
+			<span class="fenge">|</span>
+			<li><a href="#">博客</a></li>
+		</ul><br />
+		</div>
+		<p class="col-md-12 col-xs-12 shanghai">上海逸尚云联信息技术股份有限公司 © 2004-2020 法律顾问：北京中银（上海）律师事务所 沪ICP备06003020号-1</p>
+		<div class="safe col-md-12 col-xs-12">
+			<a href="#" class="safe-con">
+				<img src="img/index/safty.png"/>
+				<span>沪公网安备 31010402000973号</span>
+			</a>
+		</div>
+	</div>
+
+		<script src="js/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/detail.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script>
+			console.log(location.search);
+			var id = location.search.substr(1).split('=')[1];
+			$.ajax({
+				url: 'mock/productList.json',
+				type: 'get',
+				dataType: 'json',
+				success: function(res) {
+					var arr = res.data;
+					// 通过 产品id  过滤对应的一个商品信息
+					var arrOne = arr.filter(function(item) {
+						return item.id == id
+					});
+					//console.log(arrOne);
+					var str = '';
+					var str2 = '';
+					str2 += `
+				       <div class="tabs">
+							<div class="tab-content">
+					    `;
+					var imgs = arrOne[0].slideimgs;
+					console.log(imgs);
+					for(var k in imgs) {
+						if(k == 0) {
+							str2 += `<div class="content-img tab-pane active" id="product${parseInt(k)+1}">
+									<img src="img/category/${imgs[k]}">
+								 </div>`;
+						} else {
+							str2 += `<div class="content-img tab-pane" id="product${parseInt(k)+1}">
+									<img src="img/category/${imgs[k]}">
+								 </div>`;
+						}
+					}
+					str2 += `	
+							</div>
+							<div class="tab-title">
+					    `;
+					for(var k in imgs) {
+						if(k == 0) {
+							str2 += `<div class="active"><a href="#product${parseInt(k)+1}" data-toggle="tab"><img src="img/category/${imgs[k]}"></a></div>`;
+						} else {
+							str2 += `<div><a href="#product${parseInt(k)+1}" data-toggle="tab"><img src="img/category/${imgs[k]}"></a></div>`;
+						}
+					}
+
+					str2 += `			
+							</div>
+						</div>
+				    `;
+					$('.myslide').html(str2);
+					str += `
+					   
+					   
+					   <h3 class="product-name">${arrOne[0].title}</h3>
+							<div class="price">
+									￥  ${arrOne[0].price}
+							</div>
+							<div class="short-desc">
+								<h5>产品介绍</h5>
+								<font style="vertical-align: inherit;">
+									${arrOne[0].content}
+								</font>
+							</div>
+							<div class="pro-size">
+								<h5>产品尺寸</h5>
+								<div>
+								<span>S</span>
+								<span class="active">M</span>
+								<span>L</span>
+								<span>XL</span>
+								</div>
+							</div>
+					`;
+
+					$('.summary').html(str);
+
+					/*详情页中 产品展示轮播*/
+					$('.tab-title').slick({
+						speed: 400,
+						slidesToShow: 4,
+						slidesToScroll: 1,
+						prevArrow: '<button class="myprev"><i class="iconfont icon-right"></i></button>',
+						nextArrow: '<button class="mynext"><i class="iconfont icon-left"></i></button>',
+						responsive: [{
+								breakpoint: 991,
+								settings: {
+									slidesToShow: 3,
+									slidesToScroll: 1
+								}
+							},
+							{
+								breakpoint: 767,
+								settings: {
+									slidesToShow: 2,
+									slidesToScroll: 1
+								}
+							}
+						]
+					});
+					$(".pro-size span").click(function(){
+//						var index = $(this).index();
+//						$(this).eq(index).addClass("ch").siblings().removeClass("ch");
+                        $(this).css("cursor","hand").css("background-color","white").css("color","#ca7379").css("border","1px solid #ca7379").siblings().css("background-color","#ca7379").css("color","white");
+					})
+				}
+				
+			})
+
+			// 添加到购物车函数
+			function addCart() {
+				var bool = true; // 假定新商品
+				var counts = $('.countInput').val();
+				//  1.先去本地存储中查找所有商品
+				//  将字符串转为对象 JSON.parse(str) 
+				var addGoodList = JSON.parse(window.localStorage.getItem('addGoodList')) || [];
+				console.log(addGoodList);
+				/*
+				 *  1.先去本地存储中查找所有商品
+				 *  2.如果不是新商品，在旧商品中更改数量
+				    3.如果是新商品添加到本地存储中 
+				*/
+
+				// 2. 如果不是新商品，在旧商品中更改数量
+				for(var i = 0; i < addGoodList.length; i++) {
+					console.log(addGoodList[i].itemId, id);
+					if(addGoodList[i].itemId == id) {
+						// 是旧商品， 更改数量
+						var countNew = parseInt(addGoodList[i].count) + parseInt(counts);
+						var addGoodListCount = {
+							itemId: id,
+							count: countNew
+						}
+						// 将旧商品删除，然后添加更改好的商品
+						addGoodList.splice(i, 1);
+
+						addGoodList.push(addGoodListCount);
+						bool = false;
+						break;
+					}
+				}
+				// 3.如果是新商品添加到本地存储中 
+				// 3.1获得文本框中数量
+				/*
+				  var addGoodList =[
+				     {itemId:1,count:5},
+				     {itemId:4,count:3},
+				     {itemId:5,count:8}
+				  ];
+				*/
+
+				// 3.2构建本地存储的一维数组数据
+				if(bool) {
+					var addGoodListOne = {
+						itemId: id,
+						count: counts
+					}
+					addGoodList.push(addGoodListOne);
+				}
+				// 3.3将数据添加到本地存储中  key:value
+				// JSON.stringify(obj)  对象转为字符串
+				window.localStorage.setItem('addGoodList', JSON.stringify(addGoodList));
+				// 跳转到购物车
+				window.location.href = 'cart.html';
+			}
+			
+			
+		</script>
+	</body>
+
+</html>

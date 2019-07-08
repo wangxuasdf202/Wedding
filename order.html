@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>FORYOU婚纱网-确认订单</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+    <link rel="stylesheet" type="text/css" href="css/iconfontw.css"/>
+    <link rel="stylesheet" type="text/css" href="css/iconfont-zx.css"/>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <link rel="stylesheet" type="text/css" href="css/order.css"/>
+    <script src="js/jquery-1.12.4.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+    <script src="mock/mock.js"></script>
+    <script src="mock/address.js" type="text/javascript" charset="utf-8"></script>
+    <script src="bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/iconfontw.js" type="text/javascript" charset="utf-8"></script>
+    
+</head>
+<body>
+	<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+      				</button>
+					<a class="navbar-brand" href="index.html"><img src="img/index/brand.png" width="150px"/></a>
+				</div>
+
+				<!-- 折叠部分 -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<a href="#">首页<span class="sr-only">(current)</span></a>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">产品<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="category.html">-森系热卖-</a>
+								</li>
+								<li>
+									<a href="category.html">-敬酒服-</a>
+								</li>
+								<li>
+									<a href="category.html">-秀禾服-</a>
+								</li>
+								<li role="separator" class="divider"></li>
+								<li>
+									<a href="category.html">-新品推荐-</a>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">面料<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">-全部-</a>
+								</li>
+								<li>
+									<a href="#">-面料趋势-</a>
+								</li>
+								
+								<li>
+									<a href="#">-面料图库-</a>
+								</li>
+								<li>
+									<a href="#">-面料书籍-</a>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">明星<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">-明星大片-</a>
+								</li>
+								<li>
+									<a href="#">-明星红毯-</a>
+								</li>
+								<li role="separator" class="divider"></li>
+								<li>
+									<a href="#">-明星婚礼-</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">资讯</a>
+						</li>
+						<li>
+
+							<a href="order.html">我的订单</a>
+						</li>
+						<ul class="nav no-collapse navbtn">
+							<li>
+							<a href="#" data-toggle="dropdown">
+							<i class="iconfont icon-xiazai17"></i>
+								</a>
+								<div class="dropdown-menu search-form">
+									<form>
+										<div class="input-group">
+											<input type="text" class="form-control searchwedding" placeholder="最新时尚一网打尽...">
+											<span class="input-group-btn">
+        										<button class="btn btn-default search-btn" type="button">确定</button>
+      										</span>
+										</div>
+										<!-- /input-group -->
+									</form>
+								</div>
+							</li>
+							<li>
+								<a href="cart.html" class="iconfont icon-gouwuchekong"></a>
+							</li>
+						</ul>
+						<ul class="navbarright pull-right hidden-xs">
+							<!--<li><a href="login.html">登录</a></li>-->
+							<li class="mylogin pull-left"></li>
+							 <li class="dropdown">
+									<a href="my.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">我的管理<span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<!--传递页面到相应选项卡参考https://blog.csdn.net/qq_38822390/article/details/88037772-->
+										<li>
+											<a href="my.html?type=1">账户设置</a>
+										</li>
+										<li>
+											<a href="my.html?type=2">地址管理</a>
+										</li>
+										<li>
+											<a href="my.html?type=3">订单管理</a>
+										</li>
+									</ul>
+							</li>
+						</ul>
+						
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-fluid -->
+		</nav>
+		<!--标题栏end-->
+	<div class="bg-container">
+		<!--<img src="img/备选12.jpg" width="1366px" height="100px "/>-->
+	</div>
+	
+	<div class="container zt clearfix">
+        <div class="row ">
+            	
+            <div class="checkout-form">						
+                    
+                    <div class="col-md-11 col-xs-12 mb10 col-md-offset-1 ">
+                        <div class="panel">
+                          <div class="panel-heading">
+                            <h3 class="panel-title">地址管理</h3>
+                          </div>
+                          <a class="moren panel-body  myaddress-info" href="my.html?type=2">
+                            还没有地址信息，请去填写地址
+                          </a>
+                        </div> 
+                        <div class="order-wrapper">
+                            <h3>确认订单</h3>
+                            <div class="order-table table-responsive mb10">
+                                <table class="mytable">
+                                    <thead>
+                                        <tr>
+                                            <th class="product-name">商品</th>
+                                            <th class="product-introduce">名称</th>
+                                            <th class="product-price">单价</th>
+                                            <th class="product-quantity">数量</th>
+                                            <th class="product-total">小计</th>
+                                        </tr>							
+                                    </thead>
+                                    <tbody>
+                                         <!--<tr>
+                                            <td class="product-name">
+                                                <img src="img/index/order1.jpg"/>
+                                                <strong class="product-qty"></strong>
+                                            </td>
+                                            <td class="product-introduce">
+                                            	<a href="#">
+                                                	红妆饰佳 2019新款夏季森系轻婚纱礼服新娘结婚公主奢华星空抹胸婚纱拖尾女
+                                                </a>
+                                            </td>
+                                            <td class="product-price">¥165.00</td>
+                                            <td class="product-quantity">1</td>
+                                            <td class="product-total">
+                                                <span class="amount">¥165.00</span>
+                                            </td>
+                                        </tr> 
+                                         <tr>
+                                            <td class="product-name">
+                                                <img src="img/index/order2.jpg"/>
+                                                <strong class="product-qty"></strong>
+                                            </td>
+                                            <td class="product-introduce">
+                                            	<a href="#">
+                                                	婚纱2019新款礼服一字肩齐地新娘结婚韩版立体花朵显瘦婚纱公主
+                                                </a>
+                                            </td>
+                                            <td class="product-price">¥50.00</td>
+                                            <td class="product-quantity">1</td>
+                                            <td class="product-total">
+                                                <span class="amount">¥50.00</span>
+                                            </td>
+                                        </tr> -->
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                            <th>订单总价</th>
+                                            <td><strong class="mytotal">¥215.00</strong>
+                                            </td>
+                                        </tr>								
+                                    </tfoot>
+                                </table>
+                            </div>
+                            <div class="address-method">
+                                <div class="order-button">
+                                   <input type="submit" value="提交订单" onclick="createOrder()"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <!--猜你喜欢-->
+        <div class="container w">
+        	<div class="like row">
+        		<h4>猜你喜欢</h4>
+        		<div class="classify">
+        			<ul class="col-md-12 col-xs-3 classify-like">
+        				<!--<li class="classify-1"><img src="img/o.jpg"/></li>-->
+        			</ul>
+        		</div>
+        	</div>
+        </div>
+    </div>
+    
+    <!--footer start-->
+	<div class="footer container">
+		<div class="footer-index-first">
+			<ul class="col-md-12 col-xs-12">
+				<li><a href="#">趋势解读</a></li>
+				<li><a href="#">流行分析</a></li>
+				<li><a href="#">款式</a></li>
+				<li><a href="#">图案</a></li>
+				<li><a href="#">面料</a></li>
+				<li><a href="#">T台</a></li>
+				<li><a href="#">读物</a></li>
+				<li><a href="#">素材</a></li>
+			</ul>
+		</div>
+		<div class="footer-index-second row">
+			<ul class="col-md-12 col-xs-12">
+			<li><a href="#">关于我们</a></li>
+			<span class="fenge">|</span>
+			<li><a href="#">会员须知</a></li>
+			<span class="fenge">|</span>
+			<li><a href="#">收费一览</a></li>
+			<span class="fenge">|</span>
+			<li><a href="#">付款方式</a></li>
+			<span class="fenge">|</span>
+			<li><a href="#">法律声明</a></li>
+			<span class="fenge">|</span>
+			<li><a href="#">联系我们</a></li>
+			<span class="fenge">|</span>
+			<li><a href="#">友情链接</a></li>
+			<span class="fenge">|</span>
+			<li><a href="#">诚聘英才</a></li>
+			<span class="fenge">|</span>
+			<li><a href="#">网站地图</a></li>
+			<span class="fenge">|</span>
+			<li><a href="#">广告中心</a></li>
+			<span class="fenge">|</span>
+			<li><a href="#">活动专题</a></li>
+			<span class="fenge">|</span>
+			<li><a href="#">博客</a></li>
+		</ul><br />
+		</div>
+		<p class="col-md-12 col-xs-12 shanghai">上海逸尚云联信息技术股份有限公司 © 2004-2020 法律顾问：北京中银（上海）律师事务所 沪ICP备06003020号-1</p>
+		<div class="safe col-md-12 col-xs-12">
+			<a href="#" class="safe-con">
+				<img src="img/index/safty.png"/>
+				<span>沪公网安备 31010402000973号</span>
+			</a>
+		</div>
+	</div>
+	<!--底部end-->
+    
+    <!--jquery 的框架-->
+    <!--bootstrap js框架-->
+    <script src="js/layer/layer.js"></script>
+    
+    <script src="mock/user.js" type="text/javascript" charset="utf-8"></script>
+    <script src="mock/order.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+    	var userInfo = JSON.parse(window.localStorage.getItem("user"))||[];
+            userId = userInfo.user;
+    	var preOrderGoodList = JSON.parse(localStorage.getItem('preOrderGoodList')) || [];
+    	// 初始订单页的基本信息
+  	    orderInfo();
+    	function orderInfo(){
+	    	var str= '';
+	    	var totalprice = 0;
+	    	for(var k in preOrderGoodList){
+	    		var count = preOrderGoodList[k].count;
+	    		var price = preOrderGoodList[k].item.price;
+	    		var itemprice = count * price;
+	    		str +=`
+	    			<tr>
+                        <td class="product-name tutututu">
+                            <img src="img/category/${preOrderGoodList[k].item.cover}"/>
+                            <strong class="product-qty"></strong>
+                        </td>
+                        <td class="product-introduce">
+                        	<a href="#">
+                            	${preOrderGoodList[k].item.title}
+                            </a>
+                        </td>
+                        <td class="product-price">${preOrderGoodList[k].item.price}</td>
+                        <td class="product-quantity">${preOrderGoodList[k].count}</td>
+                        <td class="product-total">
+                            <span class="amount">¥${itemprice}</span>
+                        </td>
+                    </tr>
+	    		`;
+	    		totalprice += itemprice;
+	    	}
+	    	$('.mytable tbody').html(str);
+	    	$('.mytotal').html("¥"+totalprice.toFixed(2));
+    	}
+    	// 点击生成订单
+    	function createOrder(){
+    		var orderNo; //订单号
+    		var orderList = []; //订单列表
+    		var preOrderGoodList = JSON.parse(localStorage.getItem('preOrderGoodList')) || [];
+    		var userInfo = JSON.parse(localStorage.getItem('user'));
+    		var user = userInfo.user;
+    		var totalprice = $('.mytotal').html();
+    		var addressId = '101';
+    		var itemStr = '';  //  购买的买件商品的 itemId 和 count 给后台 拼写形如   5|3,7|2,8|1
+    		for(var i =0; i<preOrderGoodList.length;i++){
+    			var count = preOrderGoodList[i].count;
+    			var itemId = preOrderGoodList[i].item.id;
+    			var oneStr = itemId +'|'+count +','
+    			itemStr += oneStr;
+    		}
+    		//console.log(itemStr); //重要
+    		
+    		// 1. 通过ajax 将 预定义商品订单 添加到数据库中（mock）,最后返回一个订单号 3132445454540897 
+    		console.log(user,addressId,itemStr,totalprice);
+    		$.ajax({
+    			url:'order/createOrder',
+    			type:'post',
+    			dataType:'json',
+    			data:{
+    				user:user,
+    				addressId : addressId,
+    				itemStr:itemStr,
+    				totalprice:totalprice
+    			},
+    			success:function(res){
+    				//console.log(res);
+    				orderNo = res.data; //订单号
+    				//订单列表，存到本地存储
+    				orderList = res.list.data;
+    			}
+    			
+    		})
+      		// 2. 将preOrderGoodList 的商品在 addGoodList 中删除掉,并且将preOrderGoodList 删除 
+    		var addGoodList = JSON.parse(localStorage.getItem('addGoodList')) || [];
+    		for(var i =0; i<preOrderGoodList.length;i++){
+    			for(var j=0; j<addGoodList.length;j++){
+    				if(addGoodList[j].itemId == preOrderGoodList[i].item.id){
+    					addGoodList.splice(j,1);
+    				}
+    			}
+    			
+    		}
+    		localStorage.setItem('addGoodList',JSON.stringify(addGoodList));
+    		localStorage.removeItem('preOrderGoodList');
+            layer.alert('生成订单',{'skin':'layui-layer-lan'},function(){
+            	location.href ='payment.html?orderNo='+orderNo;
+            })
+    	}
+    	//通过ajax定义图片、文字
+    	$.ajax({
+	    		url:"mock/productList.json",
+	    		type:"get",
+	    		dataType:"json",
+	    		success:function(res){
+	    			var arr=res.data;
+		    			arr=arr.filter(function(item){//分类过滤
+		    			return item.cate==4;
+		    		})
+	    			var str="";
+	    			for(k in arr){
+	    				str +=`
+					    <li>
+					    <img src="img/category/${arr[k].cover}"/>
+					    <p>${arr[k].content}</p>
+					    <h5>${arr[k].price}元</h5>
+					    </li>
+					`;
+	    			}
+	    			$('.classify-like').html(str);
+	    		}
+	    	});
+	    	
+	    	// 读取地址信息：
+        $.ajax({
+                 url:'address/addressDefault',
+                 type:'post',
+                 data:{
+                    userId:userId
+                 },
+                 dataType:'json',
+                 success:function(res){
+                     var oneDefault = res.data;
+                     var str ='';
+                     if(res.data){
+                        str +=`<div class="mr"><span>${oneDefault.realname}</span>:<span>${oneDefault.descAddress}</span><span style="color:#E2231A;">(默认)</span></div>`;
+                     }else{
+                        str +=`<div>111</div>`;
+                     }
+                     $('.myaddress-info').html(str);
+                 }
+        });
+    </script>
+</body>
+</html>

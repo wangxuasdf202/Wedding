@@ -1,0 +1,372 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	width: 100%;
+}
+ol,ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+.mt10 {
+	margin-top: 10px;
+}
+.mb30{
+	margin-bottom: 30px;
+}
+/*我的管理页整体*/
+.my-main .row.jbjt{
+	margin-top: 10px;
+	margin-left: 0px;
+	margin-right: 0px;
+	background-color: #f5f6f8;
+	/*background: url(../img/bjt.jpg) no-repeat;*/
+	/*background-size: contain;*/
+}
+.main-nav{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	background-color: black;
+}
+.main-nav .myhs{
+	font-family: arial;
+	font-size: 22px;
+	font-weight: 700;
+	float: left;
+	padding-left: 100px;
+	color: #fff;
+}
+.main-nav a{
+	color: #fff !important;
+}
+.main-nav a:hover{
+	/*color: #CA7379 !important;*/
+	font-weight: 700;
+	text-decoration: none;
+}
+.main-nav .my-gotoindex{
+	font-size: 18px;
+	float: right;
+	padding-right: 80px;
+}
+.main-nav .my-space{
+	color: #999;
+	float: right;
+	padding-right: 20px;
+}
+.main-nav .my-gotoclassify{
+	font-size: 18px;
+	float: right;
+	padding-right: 20px;
+}
+.listtabxx{
+	width: 100%;
+	margin-top: 10px;
+	/*border: 1px solid #e4e4e4;*/
+	background: url(../img/bjtp.jpg);
+	opacity: 0.3;
+	/*background-color: #000000;*/
+	background-size: cover;
+	position: relative;
+	height: 600px;
+	z-index: 0;
+}
+.mymenu{
+	margin-top: 20px;
+}
+.mymenu li{
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	margin-right: 20px;
+	font-size: 14px;
+	font-weight: 700;
+	font-family: "微软雅黑";
+	opacity: 1;
+}
+.mymenu li.active{
+	border-right:0;
+}
+.mymenu li.active a{
+	color: #f10180 !important;
+	text-decoration: none;
+}
+.mymenu li a{
+	color: #867D7E !important;
+	position: relative;
+	z-index: 999 !important;
+	opacity: 1;
+}
+.mymenu li a:hover{
+	color: #fff;
+	text-decoration: none;
+}
+.jbjt{
+	position: relative;
+}
+.listposition{
+	position: absolute;
+	top: 10px;
+	left: 180px;
+}
+.menu li{
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	margin-right: 20px;
+	font-size: 14px;
+	font-weight: 700;
+	font-family: "微软雅黑";
+}
+.menu li a{
+	color: #867D7E !important;
+}
+/*个人资料*/
+#userInfo .head-user{
+	width: 80%;
+	height: 120px;
+	padding-left: 50px;
+	position: relative;
+}
+#userInfo .userpic{
+	float: left;
+	width: 82px;
+	height: 82px;
+	border-radius: 82px;
+	border: 4px solid #fff;
+	box-shadow: 2px 2px 2px #d8d7d7;
+	position: absolute;
+	top: 18px;
+	overflow: hidden;
+	transition: all 2s;
+}
+#userInfo .userpic img{
+	width: 82px;
+	height: 82px;
+	line-height: 82px;
+	text-align: center;
+	position: absolute;
+	left: -4px;
+	top:0px;
+}
+#userInfo .userpic:hover span{
+	display: block;
+}
+#userInfo .userpic span{
+	width: 70px;
+	text-align: center;
+	position: absolute;
+	top: 53px;
+	left: 4px;
+	background: rgba(0,0,0,.7);
+	color: #fff;
+	display: none;
+}
+#userInfo .userwelcome{
+	float: left;
+	padding-left: 100px;
+	font-size: 14px;
+	height: 60px;
+	line-height: 60px;
+}
+#userInfo h3{
+	text-align: center;
+}
+#userInfo .form-horizontal{
+	color: #666;
+	font-size: 12px;
+}
+#userInfo .form-horizontal .gender{
+	font-weight: 400;
+	margin-right: 20px;
+}
+#userInfo .form-horizontal .male,#userInfo .form-horizontal .female{
+	width: 15px;
+	height: 15px;
+}
+#userInfo .form-horizontal #inputplace{
+	width: 150px;
+	height: 35px;
+}
+#userInfo .form-horizontal .btn-default{
+	color: #fff;
+	background-color: #f60;
+}
+#userInfo .form-horizontal .form-control{
+	width: 80%;
+}
+/*收货地址管理*/
+#addrInfo .form-horizontal .head{
+	width: 100%;
+	height: 32px;
+	line-height: 32px;
+	font-size: 14px;
+	font-weight: 700;
+	height: 32px;
+	line-height: 32px;
+	margin-bottom: 20px;
+	background-color: #fff;
+	padding-left: 20px;
+	border-top: 1px solid #ef50a3;
+	border-bottom: 1px solid #eaeaea;
+}
+#addrInfo .form-horizontal .addNewAddress .headTips{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	font-weight: 700;
+	padding-left: 20px;
+	color: #000;
+	background-color: #fff;
+	border-bottom: 1px solid #eaeaea;
+}
+#addrInfo .table-addrInfo{
+	width: 100%;
+	background-color: #fff;
+}
+#addrInfo .form-horizontal .addNewAddress{
+	background: #fbfbfb;
+	color: grey;
+	border-top: 1px solid #ef50a3;
+	font-size: 12px;
+	font-weight: 400;
+}
+#addrInfo .form-horizontal .form-control{
+	width: 60%;
+}
+#addrInfo .form-horizontal .btn-default{
+	color: #fff;
+	background-color: #CA7379;
+}
+.isDefault td{
+	background-color: lightblue;
+	color: #fff;
+}
+/*订单管理*/
+#orderInfo{
+	margin-left: 10px;
+}
+#orderInfo .orderList{
+	margin-top:20px !important;
+}
+#orderInfo .orderList .orderitem{
+	margin-bottom:20px !important;
+	position: relative;
+	width: 96%;
+	margin-left: 18px;
+}
+#orderInfo .orderList .orderitem span{
+	display: inline-block;
+	height: 120px;
+	line-height: 120px;
+	text-align: center;
+}
+#orderInfo .orderList .orderitem .ordernumber{  
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	border-left: 2px solid #fb47a8;
+	border-top: 1px solid #eaeaea;
+	background-color: #f9f9f9;
+}
+#orderInfo .orderList .orderitem .orderdetail{
+	border: 1px solid #eaeaea;
+	background-color: #fff;
+}
+#orderInfo .orderList .orderitem .orderdetail .orderdetail-image{
+	height: 120px;
+	line-height: 120px;
+}
+#orderInfo .orderList .orderitem .orderdetail .orderdetail-total{
+	text-align: center;
+}
+.confirmReceipt{
+	width: 70px;
+	height: 28px;
+	margin-left: -10px;
+	
+}
+.layui-layer-lan .layui-layer-title{
+	background: gray !important;
+}
+/*底部start*/
+.footer ul {
+	list-style: none;
+}
+.footer{
+	font-size: 14px;
+}
+.footer a{
+	color: #000;
+}
+.footer{
+	margin-top: 50px;
+	border-top: 1px solid #ddd;
+	position: relative;
+	bottom: 0;
+}
+.footer .footer-index-first li,.footer-index-second li{
+	float: left;
+}
+.footer-index-first{
+	margin-top: 30px;
+}
+.footer-index-first li{
+    padding: 0 8px;
+}
+.footer span{
+	float: left;
+}
+.fenge{
+	padding:0 8px 0;
+}
+.safe img,p{
+	float: left;
+}
+.footer-index-first ul{
+	width: 450px;
+	height: 30px;
+	position: absolute;
+	left: 50%;
+	margin-left: -225px;
+}
+.footer-index-second ul{
+	top: 60px;
+	width: 960px;
+	height: 30px;
+	left: 50%;
+	margin-left: -480px;
+}
+.footer .shanghai{
+	position: absolute;
+	top: 120px;
+	width: 750px;
+	height: 30px;
+	left: 50%;
+	margin-left: -375px;
+}
+.footer .safe{
+	position: absolute;
+	top: 150px;
+	width: 235px;
+	height: 30px;
+	left: 50%;
+	margin-left: -117.5px;
+}
+.footer .safe-con{
+	position: relative;
+}
+.footer .safe img{
+	position: absolute;
+	margin-left: -25px;
+}
+.footer-index-first a:hover,.footer-index-second a:hover{
+	color: #cf5053!important;
+	text-decoration: underline!important;
+}
+/*底部end*/

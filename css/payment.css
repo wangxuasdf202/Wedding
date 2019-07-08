@@ -1,0 +1,381 @@
+body{
+	font-size: 12px;
+	color: #000000;
+	height: 1000px;
+}
+.nav{
+	position: relative;
+	margin-top:20px;
+	height: 39px;
+}
+.nav .nav-left img{
+	width:40%;
+	height: 20%;
+	float: left;
+	margin-right: 10px;
+	line-height: 39px;
+}
+.nav .nav-right{
+	line-height: 30px;
+	font-weight: 700;
+	float:right;
+}
+.nav-right-wrap a{
+	color:#000;
+}
+.nav-right-wrap a:hover{
+    color: #e31613;
+}
+.nav .nav-right .fenge{
+	padding: 0 5px 0;
+}
+.navbot{
+	position: relative;
+}
+.navbot .erweima{
+	position: absolute;
+	top: 15px;
+}
+.navbot .erweima .erweimaimg{
+	width: 88px;
+	height: 88px;
+	border: 1px solid #fb9d9d;
+	padding:3px 2px 3px 3px;
+	box-shadow: 0 0 20px rgba(0,0,0,.12);
+}
+.navbot .erweima i img{
+	width: 7px;
+	height: 15px;
+	position: absolute;
+	left: 87px;
+	top: 44px;
+}
+.navbot .left-text h3,.orderid{
+	line-height: 26px;
+    height: 26px;
+    overflow: hidden;
+    color: #333;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: "Microsoft Yahei";
+}
+.navbot .left-text .orderid{
+	position: absolute;
+	left: 230px;
+}
+.navbot .left-text{
+	width: 700px;
+	position: absolute;
+	top: 15px;
+	left: 150px;
+	color: #666;
+}
+.navbot .right{
+	width: 140px;
+	position: absolute;
+	top:35px;
+	right: 0px;
+}
+.navbot .right strong{
+	position: absolute;
+	right: 19px;
+}
+.navbot .right .yuan{
+	position: absolute;
+	right: 0px;
+}
+.navbot .right strong{
+	color: #e31613;
+	font-weight: 700;
+	font-size: 15px;
+}
+.navbot .right .orderdetail{
+	position: absolute;
+	top: 25px;
+	right:0;
+}
+
+.payment-wrap{
+    background-color: #fff;
+    padding: 12px 30px;
+    box-shadow: 0 6px 32px rgba(0,0,0,.13);
+    margin-top:135px;
+    width: 99%;
+    position: relative;
+    padding-bottom:200px;
+}
+.payment-wrap .jian{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 113px;
+	height: 24px;
+}
+.payment-wrap .paymentele{
+	width: 90%;
+	margin: auto;
+	margin-top: 30px;
+	position: relative;
+}
+.payment-wrap .blod{
+	font-weight: 700;
+	font-size: 15px;
+}
+.yinhang{
+	margin: 0 20px 0;
+}
+.baitiao,.baitiao-right,.baitiao-right-top{
+	margin-right: 20px;
+}
+.baitiao img{
+	margin-left: 15px;
+}
+.payment-wrap .nonghang{
+	width: 26px;
+	height: 26px;
+}
+.paymentele .p-wrap{
+	padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    margin-top: 20px;
+}
+.zhifuimg{
+	margin-right: 5px;
+}
+.payment-wrap div,img{
+	margin-right: 20px;
+}
+input[type=checkbox] {
+  margin-right: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  width: 22px;
+  height: 22px;
+  position: relative;
+  display: block;
+}
+
+input[type=checkbox]:after {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  top: 0;
+  content: " ";
+  background-color:white;
+  color: #000;
+  display: inline-block;
+  visibility: visible;
+  padding: 0px 3px;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+   display: block;
+}
+
+input[type=checkbox]:checked:after {
+  content: "✓";
+  font-size: 16px;
+  font-weight: 700;
+   display: block;
+}
+
+.paymentele div,.gouxuan{
+	float: left;
+}
+.paymentele .red{
+    color: #e31613;
+}
+.paymentele .red .youhui{
+    display: inline-block;
+    height: 18px;
+    line-height: 18px;
+    background-color: #fff;
+    border: 1px solid #e31613;
+    padding: 0 4px;
+    font-style: normal;
+    border-radius: 3px;
+    margin-right: 3px;
+}
+.baitiao .dabaitiao{
+	width: 24px;
+    height: 30px;
+}
+.baitiao-right .baitiao-right-top .fenge{
+	padding: 0 5px 0;
+}
+.baitiao-right-bot a{
+    width: auto;
+    height: 48px;
+    padding: 1px 15px;
+    margin:10px 10px 10px 0;
+    border: 1px solid #c9dfff;
+    float: left;
+    display: block
+}
+.baitiao-right-bot .qi{
+	font-size: 15px;
+	font-weight: 700;
+	color: #000000;
+}
+.pay-new{
+    height: 34px;
+    line-height: 34px;
+    width: 138px;
+    border: 1px solid #e0e0e0;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    margin-top:20px;
+    margin-left: 50px;
+}
+.pay-new a:hover{
+	color: #e31613;
+	text-decoration: none;
+}
+.payimmediate{
+    font-size: 18px;
+    width: 220px;
+    font-family: "Microsoft Yahei";
+    font-weight: 700;
+    height: 48px;
+    line-height: 48px;
+    
+}
+.payimmediate a{
+	 color: white;
+	 position:absolute;
+	 left: 50%;
+	 margin-left: -36px;
+	 text-decoration: none;
+}
+.payment-wrap .payimmediate{
+	margin: 0;
+}
+
+.payimmediate a:hover{
+	 text-decoration: none;
+}
+.disabled{
+	cursor: default;
+    background: #b5b5b5;
+    border-color: #b5b5b5;
+    box-shadow: none;
+    filter: none;
+}
+.changedisabled{
+	cursor: pointer;
+    background: #e31613;
+    border-color: #b5b5b5;
+    box-shadow: none;
+    filter: none;
+}
+.payimmediate{
+	position: absolute;
+	left: 50px;
+	top: 300px;
+}
+.payment-new{
+    background-color: #fff;
+    padding: 17px 30px;
+    box-shadow: 0 6px 32px rgba(0,0,0,.13);
+    margin-top: 35px;
+    height: 60px;
+}
+.payment-new img{
+	width: 26px;
+	height: 26px;
+	margin-right: 10px;
+}
+.payment-new div,span,img{
+	float: left;
+}
+.payment-new .fenge{
+	padding: 0 15px 0;
+}
+.payment-new span{
+	color:#000;
+	font-size: 16px;
+}
+.payment-new span:hover{
+	color: #e31613;
+}
+
+
+
+/*底部start*/
+.footer ul {
+	list-style: none;
+}
+.footer{
+	font-size: 14px;
+}
+.footer a{
+	color: #000;
+}
+.footer{
+	margin-top: 50px;
+	border-top: 1px solid #ddd;
+	position: relative;
+	bottom: 0;
+}
+.footer .footer-index-first li,.footer-index-second li{
+	float: left;
+}
+.footer-index-first{
+	margin-top: 30px;
+}
+.footer-index-first li{
+    padding: 0 8px;
+}
+.footer span{
+	float: left;
+}
+.fenge{
+	padding:0 8px 0;
+}
+.safe img,p{
+	float: left;
+}
+.footer-index-first ul{
+	width: 450px;
+	height: 30px;
+	position: absolute;
+	left: 50%;
+	margin-left: -225px;
+}
+.footer-index-second ul{
+	top: 60px;
+	width: 960px;
+	height: 30px;
+	left: 50%;
+	margin-left: -480px;
+}
+.footer .shanghai{
+	position: absolute;
+	top: 120px;
+	width: 750px;
+	height: 30px;
+	left: 50%;
+	margin-left: -375px;
+}
+.footer .safe{
+	position: absolute;
+	top: 150px;
+	width: 235px;
+	height: 30px;
+	left: 50%;
+	margin-left: -117.5px;
+}
+.footer .safe-con{
+	position: relative;
+}
+.footer .safe img{
+	position: absolute;
+	margin-left: -25px;
+}
+.footer-index-first a:hover,.footer-index-second a:hover{
+	color: #cf5053!important;
+	text-decoration: underline!important;
+}
+/*底部end*/

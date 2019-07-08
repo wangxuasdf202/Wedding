@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>FORYOU婚纱-订单支付</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfontw.css"/>
+		<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+		<link rel="stylesheet" type="text/css" href="css/payment.css"/>
+		
+		<script src="js/jquery-1.12.4.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/iconfontw.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/payment.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.cxscroll.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<div class="container">
+		<!--标题栏start-->
+		<div class="nav">
+			<div class="row">
+				<div class="nav-left col-md-6">
+					<img src="img/payment/brand-payment.png"/>
+				</div>
+				<div class="nav-right-wrap col-md-6">
+					<div class="nav-right">
+						<span><a href="#">超越</a></span>
+						<span class="fenge">|</span>
+						<span><a href="#">我的订单</a></span>
+						<span class="fenge">|</span>
+						<span><a href="#">支付帮助</a></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--标题栏end-->
+		
+		<!--二维码+订单提交文字start-->
+		<div class="navbot">
+			<div class="row">
+				<div class="left col-md-6">
+					<div class="erweima">
+						<img class="erweimaimg" src="img/payment/erweima.jpg"/>
+						<i><img src="img/payment/erweimaarrow.png"/></i>
+					</div>
+					<div class="left-text">
+						<h3>订单提交成功，请尽快付款！订单号：<span class="orderid">15736794827272</span></h3>
+						<div class="">
+							<span>推荐使用</span>
+							<img class="zhifuimg" src="img/payment/zhifu.jpg"/>
+							<span >请您在</span>
+							<span style="color: #e31613;">24小时</span>
+							<span>内完成支付，否则订单会被自动取消(库存紧俏订单请参见详情页时限)</span>
+						</div>
+					</div>
+				</div>
+				<div class="right col-md-6">
+						<span>应收金额</span>
+						<strong class="totalpricew">1688</strong>
+						<span class="yuan">元</span><br />
+						<div class="orderdetail">
+							<a href="order.html">订单详情</a>
+						</div>
+				  </div>
+			</div>
+		</div>
+		<!--二维码+订单提交文字end-->
+		
+		
+		<!--中间付款start-->
+		<div class="payment-wrap container">
+			<div class="jian">
+				<img src="img/payment/jian.png"/>
+			</div>
+			<div class="paymentele">
+				<div class="p-wrap">
+					<!--银行卡付款start-->
+					<input class="gouxuan" type="checkbox" />
+					<div class="yinhang">
+						<img class="nonghang" src="img/payment/ABC.png"/>
+						<span class="blod">农业银行</span>
+					</div>
+					<div class="chuxuka">
+						储蓄卡（1000）
+					</div>
+					<div class="red">
+						<span class="youhui">优惠</span>
+						<span>单单减最高99元</span>
+					</div>
+					<!--银行卡付款end-->
+					<div class="hr">
+						
+					</div>
+				</div>
+				<!--打白条start-->
+				<div class="baitiao p-wrap">
+					<input class="gouxuan" type="checkbox" />
+					<div class="baitiao">
+						<img class="dabaitiao" src="img/payment/BAITIAO_2.0.png"/>
+						<span class="blod">打白条</span>
+					</div>
+					<div class="baitiao-right">
+						<div class="baitiao-right-top">
+							<span>想分期,快来试试打白条</span><span class="fenge">|</span>
+							<span class="red">立减35元</span><span class="fenge">|</span>
+							<span class="red">立即开通</span>
+						</div><br />
+						<div class="baitiao-right-bot">
+							<a href="#">
+								<span class="qi">不分期</span><br />
+								<span>0服务费</span>
+							</a>
+							<a href="#">
+								<span class="qi">3期</span><br />
+								<span>137.56元/期</span>
+							</a>
+							<a href="#">
+								<span class="qi">6期</span><br />
+								<span>70.37元/期</span>
+							</a>
+							<a href="#">
+								<span class="qi">12期</span><br />
+								<span>36.84元/期</span>
+							</a>
+							<a href="#">
+								<span class="qi">24期</span><br />
+								<span>20.05元/期</span>
+							</a>
+						</div>
+					</div>
+					
+				</div>
+				<!--打白条end-->
+				<!--添加新卡start-->
+				<!--添加新卡end-->
+				<div class="pay-new">
+					<a href="#">添加新卡 / 网银支付</a>
+				</div>
+				<div class="payimmediate disabled">
+					<a href="my.html?type=3">立即支付</a>
+				</div>
+			</div>
+		</div>
+		
+		<!--新银行卡+微信支付start-->
+		<div class="payment-new">
+			<div class="yinlian">
+				<img src="img/payment/PAY-UNION.png"/>
+				<a href="#"><span>中国银联</span></a>
+			</div>
+			<span class="fenge">|</span>
+			<div class="wechatpay">
+				<img src="img/payment/PAY-WEIXIN.png"/>
+				<a href="#"><span>微信支付</span></a>
+			</div>
+		</div>
+		<!--新银行卡+微信支付end-->
+		
+		<!--中间付款end-->
+	</div>
+	<!--footer-start-->
+	<!--footer start-->
+	<div class="footer container">
+		<div class="footer-index-second row">
+			<ul class="col-md-12 col-xs-12">
+			<li><a href="#">关于我们</a></li>
+			<span class="fenge">|</span>
+			<li><a href="#">加入会员</a></li>
+			<span class="fenge">|</span>
+			<li><a href="#">会员须知</a></li>
+			<span class="fenge">|</span>
+			<li><a href="#">收费一览</a></li>
+			<span class="fenge">|</span>
+			<li><a href="#">付款方式</a></li>
+			<span class="fenge">|</span>
+			<li><a href="#">法律声明</a></li>
+			<span class="fenge">|</span>
+			<li><a href="#">联系我们</a></li>
+			<span class="fenge">|</span>
+			<li><a href="#">友情链接</a></li>
+			<span class="fenge">|</span>
+			<li><a href="#">诚聘英才</a></li>
+			<span class="fenge">|</span>
+			<li><a href="#">网站地图</a></li>
+			<span class="fenge">|</span>
+			<li><a href="#">广告中心</a></li>
+			<span class="fenge">|</span>
+			<li><a href="#">活动专题</a></li>
+			<span class="fenge">|</span>
+			<li><a href="#">博客</a></li>
+		</ul><br />
+		</div>
+		<p class="col-md-12 col-xs-12 shanghai">上海逸尚云联信息技术股份有限公司 © 2004-2020 法律顾问：北京中银（上海）律师事务所 沪ICP备06003020号-1</p>
+		<div class="safe col-md-12 col-xs-12">
+			<a href="#" class="safe-con">
+				<img src="img/index/safty.png"/>
+				<span>沪公网安备 31010402000973号</span>
+			</a>
+		</div>
+	</div>
+	<!--底部end-->
+	<!--footer-end-->
+	<script type="text/javascript">
+		
+
+//			$('.totalpricew').append(str).text();
+
+		
+		//console.log(location);
+//		var id = location.search.substr(1).split('=')[1];
+//		location.href ='my.html?orderNo='+orderNo;
+//		function getorderId(){
+//			$.ajax({
+//			url:'order',
+//			type:'get',
+//			dataType:'json',
+//			success:function(res){
+//				var arr=res.data;
+//				console.log(arr);
+//			}
+//			
+//			})
+//		}
+		
+	</script>
+</body>
+</html>

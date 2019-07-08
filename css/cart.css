@@ -1,0 +1,727 @@
+.mt10{
+	margin-top:10px;
+}
+.navbar{
+	position:fixed;
+	top:0px;
+	left:0;
+	background-color:white;
+	opacity:0.8;
+	border-top: 0;
+	min-height: 30px;
+	width:100%;
+	z-index:999;
+}
+.navbarjs{
+	opacity: 1;
+	position: fixed;
+	z-index: 10000;
+	top: 0;
+	left: 0;
+	animation: 1s fadeInDown;
+}
+@media only screen and (max-width: 768px) {
+	.navbar{
+	background-color: white;
+	border-top: 0;
+	min-height: 30px;
+	}
+	
+
+}
+.dropdown .dropdown-menu{
+	position: absolute;
+
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+	color: #cf5053 !important;
+	background-color: transparent;
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
+  	color: #cf5053 !important;
+	background-color: white;
+ }
+.navbar-default .navbar-nav>li a:hover{
+		color: #cf5053 !important;
+}
+.search-form{
+	width: 300px;
+}
+.navbar .container-fluid{
+	margin-left: 200px;
+}
+.navbtn li,.navbarright li{
+	float: left;
+}
+
+.navbtn,.navbarright{
+	float: left;
+	list-style: none;
+}
+.dropdown-menu>li>a {
+	text-align: center;
+}
+.dropdown-menu{
+	min-width: 140px;
+}
+.navbarright li{
+	margin-right: 15px;
+}
+.navbarright>li a:hover {
+	color: #cf5053 !important;
+}
+.navbarright{
+	position: absolute;
+	top: 15px;
+	right: 60px;
+}
+.main-type-title h3{
+	color: #25282c;
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 6px;
+    margin: 30px 0 10px;
+    text-align: center;
+}
+.main-type-title h5{
+    color: #25282c;
+    font-family: "Merriweather", sans-serif;
+    font-size: 12px;
+    font-style: italic;
+    letter-spacing: 4px;
+    margin: 0px 0 30px;
+    text-align: center;
+}
+.shopnowbtn button{
+	height: 50px;
+    padding: 0 40px;
+    border: 1px solid #FFFFFF;
+    border-radius: 500px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 46px;
+    color: #fff;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -88.5px;
+    outline: none;
+}
+@media only screen and (max-width: 768px) {
+	.shopnowbtn button{
+		 position: absolute;
+	    top: 120px;
+	    left: 50%;
+	}
+}
+.shopnowbtn button:hover{
+	color: #cf5053 ;
+	font-weight: 700;
+	border: 1px solid #8C8C8C;
+}
+.custom-boxes .fashion-store{
+	min-height: 220px;
+	position: relative;
+	overflow: hidden;
+}
+.custom-boxes .first{
+	background: url(../img/index/fashionstore1.jpg) no-repeat center center / cover;
+}
+.custom-boxes .second{
+	background: url(../img/index/fashionstore3.jpg) no-repeat center center / cover;
+}
+.custom-boxes .fashion-store h3{
+    font-size: 30px;
+    font-weight: 700;
+    left: 45%;
+    letter-spacing: 8px;
+    margin: 0;
+    position: absolute;
+    top: 25%;
+    z-index: 100;
+    color: white;
+}
+
+/*购物车删除购物车*/
+
+.mask {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, .2);
+	z-index: 999;
+	display: none;
+}
+
+.modal {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 400px;
+	height: 200px;
+	background: #fff;
+	margin-left: -200px;
+	margin-top: -100px;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, .5);
+	z-index: 1000;
+	display: none;
+}
+
+.modal .close {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	font-size: 12px;
+}
+
+.modal .title {
+	padding: 30px 0;
+	text-align: center;
+	font: bold 16px 微软雅黑;
+	margin-bottom: 30px;
+}
+
+.modal .mybtn-info {
+	width: 140px;
+	height: 30px;
+	margin: 0 auto;
+}
+
+.modal .mybtn {
+	width: 65px;
+	height: 30px;
+	background: #999;
+	border: 0;
+	text-align: center;
+	line-height: 30px;
+	color: black;
+	/*color: #fff;*/
+}
+
+.modal .btn-ok {
+	background: #23527C;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+}
+@media screen and (max-width: 767px)
+.table-responsive > .table > thead > tr > th, .table-responsive > .table > tbody > tr > th, .table-responsive > .table > tfoot > tr > th, .table-responsive > .table > thead > tr > td, .table-responsive > .table > tbody > tr > td, .table-responsive > .table > tfoot > tr > td {
+    white-space: nowrap;
+}
+body {
+    font-size: 12px;
+    color: #858585;
+    letter-spacing: 1px;
+}
+.main {
+	width: 100%;
+    padding-top: 120px;
+    padding-bottom: 70px;
+}
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.main .header-page {
+    text-align: center;
+}
+.header-page h1{
+	font-family: inherit;
+	font-size: 30px;
+    margin-bottom: 20px;
+    color: #25262c;
+    font-weight: 500;
+    letter-spacing: 5px;
+    line-height: 1.2;
+    margin: 0 0 70px;
+	vertical-align: inherit;
+}
+div {
+    display: block;
+}
+.table-responsive {
+    width: 100%;
+    margin-bottom: 15px;
+    overflow-y: hidden;
+    border-bottom: 1px solid #dddddd;
+    overflow-x: auto;
+    min-height: 0.01%;
+    
+}
+.main .main-content{
+	width: 100%;
+}
+@media screen and (max-width: 767px)
+.table-responsive {
+    width: 100%;
+    margin-bottom: 15px;
+    overflow-y: hidden;
+    border: 1px solid #dddddd;
+}
+.main .main-content .shop-table {
+    margin-bottom: 0;
+}
+.table {
+    width: 100%;
+    max-width: 100%;
+}
+table {
+    background-color: transparent;
+     border-collapse: collapse;
+    border-spacing: 0;
+}
+
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+    border: 0px;
+}
+thead {
+	height: 285px;
+}
+tr {
+	height: 33px !important;
+    line-height: 33px ;
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+    height: 30px!important;
+    line-height: 30px ;
+    color: #000000 !important;
+}
+.main .main-content .shop-table tr th {
+	font-size: 14px;
+	border-top: 0;
+    border-bottom: 1px solid #222;
+    color: #222;
+    font-weight: normal;
+    text-transform: uppercase;
+    vertical-align: bottom;
+    padding: 8px;
+    line-height: 1.4;
+    vertical-align: inherit;
+    text-align: center;
+}
+
+
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+   /* border-color: inherit;*/
+}
+.main .main-content .shop-table .cart_item .product-select {
+	color: black;
+    text-align: center;
+    vertical-align: middle;
+    width: 10%;
+}
+.main .main-content .shop-table .cart_item .product-select .remove{
+	text-decoration: none;
+	color: #000000;
+}
+.main .main-content .shop-table tr td{
+    border-bottom: 1px solid #eaeaea;
+    padding: 10px;
+    text-align: center;
+}
+.main .main-content .shop-table .cart_item .product-thumbnail {
+    width: 10%;
+}
+.main .main-content .shop-table .cart_item .product-name {
+    width: 20%;
+    vertical-align: middle;
+}
+.main .main-content .shop-table .cart_item .product-name a{
+	text-decoration: none;
+	color: black;
+}
+.main .main-content .shop-table .cart_item .product-price {
+    width: 15%;
+    vertical-align: middle;
+    color: #222;
+    font-size: 13px;
+}
+.main .main-content .shop-table .cart_item .product-quantity {
+    width: 20%;
+    vertical-align: middle;
+   
+}
+.main .main-content .shop-table .cart_item .product-quantity .quantity {
+    border: 1px solid #202020;
+    border-radius: 20px;
+    height: 36px;
+    padding: 0 10px;
+    width: 120px;
+     margin: 0 auto;
+}
+.main .main-content .shop-table .cart_item .product-quantity .quantity input{
+	width:40%;
+	border: 0px;
+	text-align: center;
+	vertical-align: middle;
+	margin-top: 5px;
+}
+.main .main-content .shop-table .cart_item .product-quantity .quantity span{
+	display: inline-block;
+	width:20%;
+	text-align:center;
+	vertical-align: middle !important;
+	margin-top: 5px;
+}
+/*.main .cart-action{
+	width: 100%;
+	
+	
+}*/
+.main .cart-action {
+	width: 100%;
+	text-align: center;
+	vertical-align: middle;
+}
+.main .cart-action .totalprice{
+	font-size: 15px;
+	text-decoration: none;
+	color:#CF5053;
+}
+.main .cart-action div{
+	font-size: 15px;
+	float:right;
+	margin-right: 8%;
+}
+.main .update-cart-btn {
+    color: #fff;
+    border: 2px solid #222;
+    font-size: 11px;
+    padding: 10px 25px 11px;
+    text-align: center;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    display: inline-block;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    position: relative;
+    background-color: #222222;
+    border-radius: 20px;
+    transition-property: color;
+    transition-duration: 0.3s;
+    
+}
+.layui-layer-lan .layui-layer-title{
+	background: gray !important;
+}
+.main .checkout-btn {
+	margin-left: 10px;
+    color: #fff;
+    border: 2px solid #ca7379;
+    font-size: 11px;
+    padding: 10px 25px 11px;
+    text-align: center;
+    text-transform: uppercase;
+    display: inline-block;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    position: relative;
+    background-color: #ca7379;
+    border-radius: 20px;
+    transition-property: color;
+    transition-duration: 0.3s;
+}
+.main .cart_item .product-quantity .quantity button {
+    background: none;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    font-size: 9px;
+    height: 14px;
+    text-align: center;
+    width: 14px;
+    transition: all 0.3s ease;
+}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+button, select {
+    text-transform: none;
+}
+button {
+    overflow: visible;
+}
+input, button, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+.main .main-content .shop-table .cart_item .product-subtotal {
+    width: 15%;
+    vertical-align: middle;
+    color:#cf5053;
+}
+.main .main-content .shop-table .cart_item .product-remove{
+	color: black;
+	width: 10%;
+	 text-align: center;
+    vertical-align: middle;
+}
+.main .main-content .shop-table .cart_item .product-remove a{
+	text-decoration: none;
+	color: #000000;
+}
+.main .main-content .shop-table .qfh{
+	 color: #cf5053 !important;
+}
+.main .main-content .shop-table .cart_item .amount {
+    color: #cf5053 !important;
+}
+input, button, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+button, html input[type=button], input[type=reset], input[type=submit] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+button, select {
+    text-transform: none;
+}
+button {
+    overflow: visible;
+}
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font: inherit;
+    color: inherit;
+}
+input {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+}
+input {
+    -webkit-appearance: textfield;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    padding: 1px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+}
+input {
+    -webkit-writing-mode: horizontal-tb !important;
+}
+@media screen and (max-width: 767px)
+.table-responsive>.table>tbody>tr>td, .table-responsive>.table>tbody>tr>th, .table-responsive>.table>tfoot>tr>td, .table-responsive>.table>tfoot>tr>th, .table-responsive>.table>thead>tr>td, .table-responsive>.table>thead>tr>th {
+    white-space: nowrap;
+}
+
+/*产品详情页*/
+.product-bg{
+	position:relative;
+	background: url(../img/bg/2.jpg) no-repeat center center;
+	background-size:cover;
+	height: 330px;
+}
+
+.route{
+	position:absolute;
+	left:40px;
+	top:80px;
+	width:270px;
+	height: 180px;
+	border: 20px solid #fff;
+}
+.route h3{
+	font:20px 微软雅黑;
+	padding-left:20px;
+}
+.route ul{
+	list-style: none;
+}
+.route li{
+	float:left;
+	margin-right:7px;
+}
+.route li+li::before{
+	content:'>';
+	font-size:12px;
+	padding:0 1px;
+}
+@media only screen and (max-width:768px) {
+	.product-bg{
+		height: 230px;
+	}
+	.route{
+		top:50px;
+		width:230px;
+	    height: 120px;
+		border: 14px solid #fff;
+	}
+	.route h3{
+		font:bold 14px 微软雅黑;
+		padding-left:20px;
+	}
+	.route li{
+		font-size:12px;
+	}
+	
+}
+/* 产品展示tab效果*/
+.tabs  img{
+	width:100%;
+}
+
+.tab-title{
+	position:relative;
+	list-style:none;
+	padding:0;
+	margin:0;
+	box-sizing: border-box;
+	margin:8px -8px 0;
+}
+.tab-title li{
+	float:left;
+	width:25%;
+	padding:0 8px;
+}
+.tab-title .slick-arrow{
+	position:absolute;
+	top:50%;
+	margin-top:-20px;
+	width:40px;
+	height: 40px;
+	border:1px solid #ccc;
+	border-radius: 50%;
+	background: none;
+	z-index:10;
+	box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+	opacity: 0;
+	outline:none;
+}
+.myprev{
+	right:-6px;
+}
+.mynext{
+	left:-6px;
+}
+.tab-title:hover .slick-arrow{
+	opacity: 1;
+}
+.tab-title .slick-arrow:hover{
+	background:#080808;
+	color:#fff;
+}
+/*底部start*/
+.ft{
+	padding-bottom: 50px;
+}
+.footer ul {
+	list-style: none;
+}
+.footer{
+	font-size: 14px;
+	margin-bottom: 100px;
+}
+.footer a{
+	color: #000;
+}
+.footer{
+	margin-top: 50px;
+	border-top: 1px solid #ddd;
+	position: relative;
+	bottom: 0;
+	
+}
+.footer .footer-index-first li,.footer-index-second li{
+	float: left;
+}
+.footer-index-first{
+	margin-top: 30px;
+	
+}
+.footer-index-first li{
+    padding: 0 8px;
+}
+.footer span{
+	float: left;
+}
+.fenge{
+	padding:0 8px 0;
+}
+.safe img,p{
+	float: left;
+}
+.footer-index-first ul{
+	width: 460px;
+	height: 30px;
+	position: absolute;
+	left: 50%;
+	margin-left: -225px;
+}
+.footer-index-second ul{
+	top: 60px;
+	width: 960px;
+	height: 30px;
+	left: 50%;
+	margin-left: -480px;
+}
+.footer .shanghai{
+	position: absolute;
+	top: 120px;
+	width: 820px;
+	height: 30px;
+	left: 50%;
+	margin-left: -420px;
+}
+.footer .safe{
+	position: absolute;
+	top: 150px;
+	width: 260px;
+	height: 30px;
+	left: 50%;
+	margin-left: -117.5px;
+}
+.footer .safe-con{
+	position: relative;
+}
+.footer .safe img{
+	position: absolute;
+	margin-left: -25px;
+}
+.footer-index-first a:hover,.footer-index-second a:hover{
+	color: #cf5053!important;
+	text-decoration: underline!important;
+}
+/*底部end*/
